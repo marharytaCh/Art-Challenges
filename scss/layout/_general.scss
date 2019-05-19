@@ -4,7 +4,7 @@
 	border: 0;
 	outline: none;
 	box-sizing: border-box;
-	transition: all .3s ease-in-out;
+	// transition: all .3s ease-in-out;
 }
 
 img {
@@ -19,6 +19,7 @@ html {
 body, html {
 	min-height: 100%;
 	width: 100%;
+
 }
 
 .clear::after, .clear::before {
@@ -28,4 +29,69 @@ body, html {
 
 .clear::after {
 	clear: both;
+}
+a{
+	text-decoration: none;
+}
+.hidden{
+	display: none;
+}
+//START
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	padding-top: 45px;
+
+	&__acount{
+		width: 21px;
+		height: 25px;
+	}
+}
+.design-container{
+	max-width: 340px;
+	margin: 0 auto;
+	padding: 0 15px;
+	&__about-info{
+		display: flex;
+		flex-direction: column;
+		// justify-content: center;
+		align-items: center;
+	}
+
+}
+
+.burger-menu{
+	cursor: pointer;
+	height: 10px;
+	display: flex;
+	align-items: center;
+	transition: all .3s;
+	margin: 9px 15px 0 0;
+	&__item {
+		display: block;
+		width: 26px;
+		height: 2px;
+		background: #fff;
+		position: relative;
+		transition: none;
+
+	&::before,
+	&::after {
+		content: '';
+		width: 26px;
+		height: 2px;
+		position: absolute;
+		left: 0px;
+		background: #fff;
+		// transition: all .3s;
+	}
+
+		&::before {
+			top: -3px;
+		}
+		&::after {
+			bottom: -3px;
+		}
+	}
 }
