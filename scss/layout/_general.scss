@@ -14,6 +14,7 @@ img {
 
 html {
 	height: 100%;
+	font-size: 16px;
 }
 
 body, html {
@@ -21,6 +22,9 @@ body, html {
 	width: 100%;
 
 }
+body { 
+font: 1rem $font;
+	color: white; }
 
 .clear::after, .clear::before {
 	content: " ";
@@ -94,4 +98,54 @@ a{
 			bottom: -3px;
 		}
 	}
+}
+
+// Button general changes
+
+.button { 
+	background: $orange;
+	border-radius: 4px;
+	color: white;
+	font: 600 0.875rem $font;
+	&__link { 
+		text-decoration: none;
+		color: white;
+	}
+}
+
+// JS MODAL WINDOWS
+
+
+.bg { 
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0,0,0, .8);
+	
+}
+
+.content { 
+	background-color: $blue; 
+	margin: 15% auto;
+	width: 90%;
+	height: 65%;
+	border-radius: 8px;
+	background-image: url('../images/linesModal.png');
+	background-size: cover;
+	&__wrapper { 
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__close { 
+	width: 20px;
+	height: 20px;
+	margin:20px 20px;
+	overflow: hidden;
+}
 }
