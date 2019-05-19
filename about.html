@@ -34,39 +34,60 @@
 				</filter>
 			</defs>
 		</symbol>
+		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" id="closeCross">
+			<title></title>
+			<path d="M320 274.752L93.728 48.48 48.48 93.728 274.752 320 48.48 546.272l45.248 45.248L320 365.248 546.272 591.52l45.248-45.248L365.248 320 591.52 93.728 546.272 48.48 320 274.752z" fill="#fff"></path>
+		</symbol>
 	</svg>
 
 	<header class="about-header">
 		<!-- <img src="images/about-header-bg.png" alt="" class="about-header__img"> -->
 		<div class="design-container">
-			<nav class="navigation">
-			<img src="images/SVG/account.svg" alt="Логотип" class="navigation__acount">
+		<nav class="navigation">
+			<img src="images/SVG/account.svg" alt="Логотип" class="navigation__acount" id="accountBtn">
 
 			<div id="menuBtn" class="menu">
 			</div>
 			
 		</nav>
 		<a href="" class="logo">
-			<img src="images/SVG/logo.svg" alt="Логотип" class="Logo__icon">
+			<img src="images/SVG/logo.svg" alt="Логотип" class="logo__icon">
 		</a>
 		</div>
-		<!-- <div class="navigation">
-		    <img id="accountBtn" class="account" src="images/SVG/account.svg" alt="Account">
-		    <div id="registerBg" class="registerBg">
-		     <div class="registerContent">
-		      <span class="registerClose">bla</span>
-		      <p>bla</p>
-		     </div>
-		    </div>
-		    <div id="menuBtn" class="menu">
-		    </div>
-		    <div id="menuBg" class="menuBg">
-		     <div class="menuContent">
-		      <span class="menuClose">bla</span>
-		      
-		     </div>
-		    </div>
-		   </div> -->
+
+		<!-- Modal Windows -->
+		<div id="startModalBg" class="bg startModalBg">
+			<div class="content startModalContent">
+				<div class="content__wrapper">
+					<svg class="icon content__close startModalContent__close">
+						<use xlink:href="#closeCross"></use>
+					</svg>
+				</div>
+				<div class="startModalContent__container">
+					<svg class="icon startModalContent__logo">
+						<use xlink:href="#Logo"></use>
+					</svg>
+
+					<div class="startModalContent__buttons">
+						<button class="button startModalContent__enter">Вход</button>
+						<button class="button startModalContent__register">Регистрация</button>
+					</div>
+					<p class="startModalContent__text">Быстрый вход, используя <br> Touch ID</p>
+					<img src="images/SVG/Finger.svg" alt="" class="startModalContent__fingerprint">
+					<p class="startModalContent__text2">Использовать Touch ID</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="menuBg" class="bg menuBg">
+			<div class="content menuContent">
+				<svg class="icon close menu__close">
+					<use xlink:href="#closeCross"></use>
+				</svg>
+				
+			</div>
+		</div>
+		
 	</header>
 	<main class="about-main">
 		<div class="design-container">
@@ -91,65 +112,79 @@
 				</div>
 				<div>
 					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
+						<img src="images/header-sl2.png" alt="Наш работник">
 						<p class="slider__name">Аркадий Укупник,</p>
 						<p class="slider__position">СЕО</p>
 					</div>
 				</div>
 				<div>
 					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
+						<img src="images/header-sl3.png" alt="Наш работник">
 						<p class="slider__name">Аркадий Укупник,</p>
 						<p class="slider__position">СЕО</p>
 					</div>
 				</div>
 				<div>
 					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
+						<img src="images/header-sl4.png" alt="Наш работник">
 						<p class="slider__name">Аркадий Укупник,</p>
 						<p class="slider__position">СЕО</p>
 					</div>
 				</div>
 				<div>
 					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
+						<img src="images/header-sl5.png" alt="Наш работник">
 						<p class="slider__name">Аркадий Укупник,</p>
 						<p class="slider__position">СЕО</p>
 					</div>
 				</div>
 				<div>
 					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
+						<img src="images/header-sl6.png" alt="Наш работник">
 						<p class="slider__name">Аркадий Укупник,</p>
 						<p class="slider__position">СЕО</p>
 					</div>
 				</div>
 				<div>
 					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
+						<img src="images/header-sl7.png" alt="Наш работник">
 						<p class="slider__name">Аркадий Укупник,</p>
 						<p class="slider__position">СЕО</p>
 					</div>
 				</div>
 				<div>
 					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
+						<img src="images/header-sl8.png" alt="Наш работник">
+						<p class="slider__name">Аркадий Укупник,</p>
+						<p class="slider__position">СЕО</p>
+					</div>
+				</div>
+				<div>
+					<div class="slider__item">
+						<img src="images/header-sl9.png" alt="Наш работник">
+						<p class="slider__name">Аркадий Укупник,</p>
+						<p class="slider__position">СЕО</p>
+					</div>
+				</div>
+				<div>
+					<div class="slider__item">
+						<img src="images/header-sl10.png" alt="Наш работник">
 						<p class="slider__name">Аркадий Укупник,</p>
 						<p class="slider__position">СЕО</p>
 					</div>
 				</div>
 			</div>
 			<p>Наши сотрдуники упорно работают над улучшением сервисов и наполнением сайта. На постоянной основе проводится постоянный поиск вакансий в лучших дизайн студиях страны</p>
-			
-			 
-		</div>
-		<div class="about-scroll">
+			<div class="about-scroll">
 			<div class="mouse">
 				<div class="dot">
 
 				</div>
 			</div>
 		</div>
+			 
+		</div>
+		
 		</div>
 		<div class="design-container design-container__about-info">
 			<button type="button" class="button-do">Участие в челлендже</button>

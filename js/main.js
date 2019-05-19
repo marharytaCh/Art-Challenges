@@ -25,7 +25,7 @@ window.open(adress);
 }
 
 // Start Modal Window
-var registerBg = document.getElementById('startModalBg');
+var registerBg = document.getElementsByClassName('startModalBg')[0];
 var accountBtn = document.getElementById('accountBtn');
 var registerClose = document.getElementsByClassName('startModalContent__close')[0];
 var startModalContent = document.getElementsByClassName('startModalContent')[0];
