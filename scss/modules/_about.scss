@@ -67,10 +67,10 @@
 }
 
 .about-scroll{
-	position: absolute;
-	bottom: 140px;
-	right: 20px;
-	z-index:99;
+	position: fixed;
+	bottom: 22%;
+	right: 10%;
+	z-index:10;
 }
 
 .slider{
@@ -84,7 +84,10 @@
 	}
 	
 }
+.slick-active{
+	-webkit-filter: brightness(50%);
+}
 .slick-active.slick-center  {
     transform: scale(1.2);
-  
+  	-webkit-filter: brightness(100%);
 }
