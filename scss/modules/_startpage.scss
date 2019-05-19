@@ -115,30 +115,4 @@
 			font-weight: 600; }
 		}
 
-// Properties for menu
 
-.menu {
-	width: 24px;
-	height: 2px;
-	background: white;
-	position: relative;
-
-	&::before,
-	&::after { 
-		content: '';
-		position: absolute;
-		background: white;
-		width: 24px;
-		height: 2px;
-	}
-
-
-	&::before { 
-		bottom:8px; }
-
-		&::after  {
-			top: 8px; 
-		}
-	}
-
-// Properties for menu modal window
