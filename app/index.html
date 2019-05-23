@@ -8,9 +8,13 @@
 	<title>Design Challenge</title>
 
 	<link rel="icon" href="images/favicon.png">
+	
 
-	<link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/global.min.css">
+	<!--endbuild-->
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,6 +48,7 @@
 			</defs>
 		</symbol>
 	</svg>
+
 	<div class="startpageContainer">
 		<div class="startpage">
 			<div class="navigation">
@@ -61,7 +66,7 @@
 								<use xlink:href="#Logo"></use>
 							</svg>
 
-							<div class="startModalContent__buttons">
+							<div class="startModalContent__buttons"> 
 								<button class="button startModalContent__enter">Вход</button>
 								<button class="button startModalContent__register">Регистрация</button>
 							</div>
@@ -125,10 +130,12 @@
 
 
 	<!-- Scripts -->
-	<script src="js/libs/jquery-3.4.1.min.js"></script>
-	<script src="js/main.js"></script>
 
-	<!-- LiveReload Script -->
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<!--build:js js/main.min.js -->
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
 </body>
 </html>

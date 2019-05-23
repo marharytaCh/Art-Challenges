@@ -8,11 +8,11 @@
 		content:url('../images/lines.png');
 		@include pos($t:0, $r:0, $l:0);
 		opacity: 0.7;
-		z-index: -3;
+		z-index: -3; 
 	}
 }
 
-.about-header{	
+.about-header{	 
 	z-index: 1;
 	position: relative;
 	min-height: 30vh;
