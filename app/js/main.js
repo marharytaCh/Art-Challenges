@@ -15,8 +15,11 @@
 			
 		});
 	});
-	$(".button-do").click(function(){
+	$(".challenge-item").click(function(){
 		GoToChallengePage("challenges.html")
+	})
+	$('.about-item').click(function(){
+		GoToChallengePage('about.html')
 	})
 })(jQuery);
 
@@ -27,7 +30,9 @@ window.open(adress);
 //SHOW MODAL WINDOS
 $('.accountBtn').click(function(){
 	// var startModalBg = document.getElementsByClassName('startModalBg')[0];
+	menuBg.style.display = 'none';
 	startModalBg.style.display = 'block';
+
 })
 
 $('.menuBtn').click(function(){
@@ -44,6 +49,8 @@ $('.content__close').click(function(){
 	menuBg.style.display = 'none';
 	enterModalBg.style.display = 'none';
 })
+
+
 
 /*var registerBg = document.getElementsByClassName('startModalBg')[0];
 var accountBtn = document.getElementById('accountBtn');

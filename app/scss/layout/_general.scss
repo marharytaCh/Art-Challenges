@@ -137,6 +137,7 @@ a{
 	border-radius: 8px;
 	background-image: url('../images/linesModal.png');
 	background-size: cover;
+	
 	&__wrapper { 
 		display: flex;
 		justify-content: flex-end;
@@ -149,10 +150,102 @@ a{
 	overflow: hidden;
 	}
 
-	&__items{
-		position: relative;
-		padding: 0 40px; 
+	&__info{
+		padding: 0 15px; 
+		text-align: center;
 	}
+
+	&__title{
+		font-family: $font;
+		color: #fff;
+		font-size: 1.25rem;
+		font-weight: 500;
+		line-height: 1.8;
+		display: inline-block;
+		position: relative;
+		&::after{
+			content: '';
+			display: block;
+			height: 1px;
+			width: 110%;
+			background: #fff;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			left:-4px;
+			bottom: -1.5px;
+			display: block;
+			border:1px solid #fff;
+			border-radius:50%;
+			height: 5px;
+			width: 5px;
+			// background: #fff;
+		}
+	}
+
+	&__items{
+		margin-top: 55px;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+  		grid-template-columns: 1fr 1fr 1fr;
+  		grid-row-gap:45px;
+	}
+
+	&__item{
+		img{
+		width: 30px;
+		height: 30px;}
+	}
+}
+
+.menuContent{
+	nimation-name: fadeIn;
+    -webkit-animation-name: fadeIn; 
+ 
+    animation-duration: .8s; 
+    -webkit-animation-duration: .8s;
+ 
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    visibility: visible ; 
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;       
+    }
+    /* 60% {
+        transform: scale(1.1);  
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1; 
+    }    */
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }       
+}
+ 
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;       
+    }
+    /* 60% {
+        -webkit-transform: scale(1.1);
+    }
+    80% {
+        -webkit-transform: scale(0.9);
+        opacity: 1; 
+    }    */
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
 }
 
 //SCROLL
@@ -260,8 +353,7 @@ a{
 
 		&::after  {
 			top: 8px; 
-		}}
+		}
+	}
 
 //UNDERLINE TITLE
-.underline-title{
-}
