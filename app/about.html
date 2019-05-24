@@ -7,10 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Design Challenge</title>
 
-	<link rel="icon" href="images/favicon.png">
 
-	<link rel="stylesheet" href="js/libs/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="js/libs/slick/slick-theme.css"/>
 	
 
 	<!--build:css css/styles.min.css-->
@@ -50,9 +47,9 @@
 		<!-- <img src="images/about-header-bg.png" alt="" class="about-header__img"> -->
 		<div class="design-container">
 		<nav class="navigation">
-			<img src="images/SVG/account.svg" alt="Логотип" class="navigation__acount" id="accountBtn">
+			<img src="images/SVG/account.svg" alt="Логотип" class="navigation__account accountBtn">
 
-			<div id="menuBtn" class="menu">
+			<div  class="menu menuBtn">
 			</div>
 			
 		</nav>
@@ -62,6 +59,7 @@
 		</div>
 
 		<!-- Modal Windows -->
+		<!-- START -->
 		<div id="startModalBg" class="bg startModalBg">
 			<div class="content startModalContent">
 				<div class="content__wrapper">
@@ -84,14 +82,45 @@
 				</div>
 			</div>
 		</div>
+		<!-- ENTER -->
+		<div id="enterModalBg" class="bg enterModalBg">
+					<div class="content enterModalContent">
+						<div class="content__wrapper">
+							<svg class="icon content__close startModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<div class="enterModalContent__container">
+							<p class="enterModalContent__title">Вход в аккаунт</p>
+							<form class="inputs enterModalContent__inputs">
+								<input type="text" class="inputs__input enterModalContent__name">
+								<div class="enterModalContent__wrap">
+									<input type="text" class="inputs__input enterModalContent__password">
+									<img src="images/SVG/Eye.svg" alt="">
+								</div>
+							</form>
+							<p class="enterModalContent__forgot">Забыл пароль</p>
+							<button class="button enterModalContent__button">Вход</button>
+							<div class="enterModalContent__remember">
+								<input type="checkbox" id="remember" name="remember">
+								<label for="rememeber">Запомнить пароль</label>
+							</div>
+							<p class="enterModalContent__noaccount">Нет аккаунта</p>
+							<p class="enterModalContent__register">Зарегистрируйтесь</p>
 
+						</div>
+					</div>
+				</div>
+		<!-- MENU -->
 		<div id="menuBg" class="bg menuBg">
 			<div class="content menuContent">
-				<svg class="icon close menu__close">
-					<use xlink:href="#closeCross"></use>
-				</svg>
-				
+				<div class="content__wrapper">
+						<svg class="icon content__close startModalContent__close">
+							<use xlink:href="#closeCross"></use>
+						</svg>
+				</div>
 			</div>
+			
 		</div>
 		
 	</header>
@@ -199,7 +228,7 @@
 		
 	</main>
 	<!-- Scripts -->
-	<script src="js/libs/slick/slick.min.js"></script>
+	
 
 	<!--build:js js/main.min.js -->
 	<script src="js/libs/jquery.min.js"></script>

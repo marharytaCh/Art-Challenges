@@ -24,8 +24,28 @@ function GoToChallengePage(adress){
 window.open(adress);
 }
 
-// Start Modal Window
-var registerBg = document.getElementsByClassName('startModalBg')[0];
+//SHOW MODAL WINDOS
+$('.accountBtn').click(function(){
+	// var startModalBg = document.getElementsByClassName('startModalBg')[0];
+	startModalBg.style.display = 'block';
+})
+
+$('.menuBtn').click(function(){
+	menuBg.style.display = 'block'; 
+})
+
+$('.startModalContent__enter').click(function(){
+
+	enterModalBg.style.display = 'block';
+})
+//CLOSE MODAL WINDOWS
+$('.content__close').click(function(){
+	startModalBg.style.display = 'none';
+	menuBg.style.display = 'none';
+	enterModalBg.style.display = 'none';
+})
+
+/*var registerBg = document.getElementsByClassName('startModalBg')[0];
 var accountBtn = document.getElementById('accountBtn');
 var registerClose = document.getElementsByClassName('startModalContent__close')[0];
 var startModalContent = document.getElementsByClassName('startModalContent')[0];
@@ -83,4 +103,4 @@ window.onclick = function(event) {
 	if (event.target == menuBg) { 
 		menuBg.style.display = 'none';
 	}
-}
+}*/

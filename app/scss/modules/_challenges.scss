@@ -9,7 +9,8 @@
 	top:-170%;
 	overflow: hidden;
 	z-index: -3;
-	} 
+	}
+	 
 	&__title{
 		font-family: $font;
 		color: #fff;
@@ -34,13 +35,13 @@
 			content: '';
 			display: block;
 			height: 1px;
-			width: 100%;
+			width: 110%;
 			background: #fff;
 		}
 	}
 }
 .challenges-main{
-	background:#fff;
+	//background:#fff;
 	z-index: 5;
 }
 
