@@ -52,8 +52,9 @@
 	<div class="startpageContainer">
 		<div class="startpage">
 			<div class="navigation">
-				<img id="accountBtn" class="navigation__account" src="images/SVG/account.svg" alt="account">
-				<!-- Enter -->
+				<img class="navigation__account accountBtn" src="images/SVG/account.svg" alt="account">
+
+				<!-- START MODAL -->
 				<div id="startModalBg" class="bg startModalBg">
 					<div class="content startModalContent">
 						<div class="content__wrapper">
@@ -76,11 +77,12 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- Enter -->
 				<div id="enterModalBg" class="bg enterModalBg">
 					<div class="content enterModalContent">
 						<div class="content__wrapper">
-							<svg class="icon content__close enterModalContent__close">
+							<svg class="icon content__close startModalContent__close">
 								<use xlink:href="#closeCross"></use>
 							</svg>
 						</div>
@@ -105,15 +107,21 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- Menu -->
-				<div id="menuBtn" class="menu">
+				<div class="menu menuBtn">
 				</div>
-				<div id="menuBg" class="bg menuBg">
+				<div id="menuBg" class="bg menu-bg ">
 					<div class="content menuContent">
-						<svg class="icon close menu__close">
-							<use xlink:href="#closeCross"></use>
-						</svg>
-						
+						<div class="content__wrapper">
+							<svg class="icon content__close ">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+					<div class="content__items">
+						<h1 class="underline-title">Меню</h1>
+					</div>
+					
 					</div>
 				</div>
 			</div>
