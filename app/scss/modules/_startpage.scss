@@ -20,7 +20,7 @@
 	margin: 0 auto;
 	padding: 0 15px;
 	min-width: 374px;
-	// position: relative;
+
 	height: 100vh;
 	&__logo { 
 		padding-top: 215px;
@@ -40,11 +40,6 @@
 	}
 	&__button { 
 		padding:15px 17px;
-		// position: absolute;
-		// bottom: 10%;
-		// left: 24%;
-		// margin: 145px auto 0;
-		// display: block;
 	}
 	&__link { 
 	}
@@ -62,11 +57,7 @@
 // Properties for start=>register/enter modal window
 
 .startModalContent { 
-	// background-image: url('../images/startPageLines.png');
 
-	&__close { 
-		
-	}
 	&__container { 
 		display: flex;
 		flex-direction: column;
@@ -99,18 +90,167 @@
 		font-weight: 300;
 		line-height: 1.5rem;
 		letter-spacing: 0.1rem;
-		// padding-bottom: 20px; 
 	}
 
-		&__fingerprint {
+	&__fingerprint {
 		padding: 20px 0; 
+	}
+
+	&__text2 { 
+		color: $orange;
+		font-weight: 600; 
+	}
+}
+
+// Properties for enter modal window
+
+.enterModalContent { 
+	&__container { 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	&__logo { 
+		width: 100%;
+		height: 35px;
+		margin-bottom: 25px;
+	}
+	&__title { 
+		font-weight: 600;
+		padding-bottom: 40px;
+	}
+
+	&__name { 
+	}
+
+	&__password { 
+		margin-bottom: 20px;
+	}
+
+	&__forgot { 
+		width: 90%;
+		text-align: right;
+		font-size: 10px;
+		color: $orange;
+		padding-bottom: 30px;
+	}
+
+	&__button { 
+		width: 125px;
+		height: 45px;
+		margin-bottom: 55px;
+	}
+
+	&__remember { 
+		padding-bottom: 40px;
+		font-size: 0.875rem;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+	&__checkbox { 
+		display: none; 
+
+		&:checked + .enterModalContent__custom-checkbox { 
+			background-color: $orange; }
+		}
+		&__custom-checkbox {
+			position:relative;
+			display:block;
+			width:11px;
+			height:11px;
+			margin-right: 20px;
+			border: 1px solid white;
+			border-radius: 2px;
+		}
+		&__checktext { 
+
 		}
 
-		&__text2 { 
-			color: $orange;
-			font-weight: 600; 
+		&__wrapper { 
+			display: flex;
+			justify-content: space-between;
+			font-size: 0.875rem;
+			width: 80%;
 		}
+
+		&__noaccount { 
+		}
+
+		&__register { 
+			color: $orange;
+			font-weight: 600;
+		}
+	}
+
+// Properties for register modal window
+
+.registerModalContent { 
+	&__container { 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	&__logo { 
+		width: 100%;
+		height: 35px;
+		margin-bottom: 25px;
+	}
+	&__title { 
+		font-weight: 600;
+		padding-bottom: 40px;
+		text-align: center;
+	}
+
+	&__name { 
+	}
+	&__email { 
+	}
+	&__password { 
+		margin-bottom: 45px;
+	}
+
+	&__button { 
+		width: 218px;
+		height: 40px;
+		margin-bottom: 40px;
+	}
+
+	&__wrap { 
+		display: flex;
+		justify-content: center;
+		width: 80%;
+		padding-bottom:26px;
+	}
+
+
+	&__textfacebook { 
+	padding-right: 5px; }
+	
+	&__facebook { 
+		width: 16px;
+		height: 16px;
+	}
+
+	&__wrapper { 
+		width: 80%;
+		display: flex; 
+		justify-content: center;
+
+	}
+
+	&__yesaccount { 
+		padding-right: 16px;
+	}
+
+	&__enter { 
+		color: $orange;
+		font-weight: 600;
+	}
 }
+
 
 
 .challenge-item{

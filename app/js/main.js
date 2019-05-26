@@ -21,6 +21,9 @@
 	$('.about-item').click(function(){
 		GoToChallengePage('about.html')
 	})
+	$('.startpage__button').click(function(){
+		GoToChallengePage("challenges.html")
+	})
 })(jQuery);
 
 function GoToChallengePage(adress){
@@ -43,11 +46,18 @@ $('.startModalContent__enter').click(function(){
 
 	enterModalBg.style.display = 'block';
 })
+
+$('.startModalContent__register').click(function(){
+
+	registerModalBg.style.display = 'block';
+})
+
 //CLOSE MODAL WINDOWS
 $('.content__close').click(function(){
 	startModalBg.style.display = 'none';
 	menuBg.style.display = 'none';
 	enterModalBg.style.display = 'none';
+	registerModalBg.style.display = 'none';
 })
 
 
