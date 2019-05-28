@@ -15,15 +15,18 @@
 			
 		});
 	});
-	$(".challenge-item").click(function(){
+	$(".go-to-challenge").click(function(){
 		GoToChallengePage("challenges.html")
 	})
+	/*$(".button-do").click(function(){
+		GoToChallengePage("challenges.html")
+	})*/
 	$('.about-item').click(function(){
 		GoToChallengePage('about.html')
 	})
-	$('.startpage__button').click(function(){
+	/*$('.startpage__button').click(function(){
 		GoToChallengePage("challenges.html")
-	})
+	})*/
 })(jQuery);
 
 function GoToChallengePage(adress){

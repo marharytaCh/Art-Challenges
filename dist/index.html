@@ -7,36 +7,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Design Challenge</title>
 
-
+	<link rel="icon" href="images/favicon.png">
 	
 
-	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
-	<link rel="stylesheet" href="js/libs/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="js/libs/slick/slick-theme.css"/>
-	<link rel="stylesheet" href="css/global.min.css">
-	<!--endbuild-->
+
+	<link rel="stylesheet" href="css/styles.min.css">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<![endif]-->
 </head>
-<body class="about-body">
+<body>
 	<svg width="0" height="0" class="hidden">
-		<symbol viewBox="0 0 26 38" fill="none" xmlns="http://www.w3.org/2000/svg" id="Scroll">
-			<path d="M0 13c0-1.858 0-2.787.112-3.565A11 11 0 0 1 9.435.112C10.213 0 11.142 0 13 0c1.858 0 2.787 0 3.566.112a11 11 0 0 1 9.322 9.323C26 10.213 26 11.142 26 13v12c0 1.858 0 2.787-.112 3.566a11 11 0 0 1-9.323 9.322C15.787 38 14.858 38 13 38c-1.858 0-2.787 0-3.565-.112a11 11 0 0 1-9.323-9.322C0 27.785 0 26.858 0 25V13z"
-			fill="#fff" fill-opacity=".5" opacity=".5" filter="url(#filter0_b)"></path>
-			<circle cx="13.5" cy="13.5" r="4.5" fill="#EF811F"></circle>
-			<circle cx="13.5" cy="13.5" r="4.5" stroke="#000"></circle>
-			<defs>
-				<filter id="filter0_b" x="-30" y="-30" width="86" height="98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-					<feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-					<feGaussianBlur in="BackgroundImage" stdDeviation="15"></feGaussianBlur>
-					<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"></feComposite>
-					<feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"></feBlend>
-				</filter>
-			</defs>
-		</symbol>
 		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" id="closeCross">
 			<title></title>
 			<path d="M320 274.752L93.728 48.48 48.48 93.728 274.752 320 48.48 546.272l45.248 45.248L320 365.248 546.272 591.52l45.248-45.248L365.248 320 591.52 93.728 546.272 48.48 320 274.752z" fill="#fff"></path>
@@ -64,273 +46,135 @@
 		</symbol>
 	</svg>
 
-	<header class="about-header">
-		<!-- <img src="images/about-header-bg.png" alt="" class="about-header__img"> -->
-		<div class="design-container">
-		<nav class="navigation">
-			<img src="images/SVG/account.svg" alt="Логотип" class="navigation__account accountBtn">
+	<div class="startpageContainer">
+		<div class="startpage">
+			<div class="navigation">
+				<img class="navigation__account accountBtn" src="images/SVG/account.svg" alt="account">
 
-			<div  class="menu menuBtn">
-			</div>
-			
-		</nav>
-		<a href="" class="logo">
-			<img src="images/SVG/logo.svg" alt="Логотип" class="logo__icon">
-		</a>
-		</div>
+				<!-- START MODAL -->
+				<div id="startModalBg" class="bg startModalBg">
+					<div class="content startModalContent">
+						<div class="content__wrapper">
+							<svg class="icon content__close startModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<div class="startModalContent__container">
+							<svg class="icon startModalContent__logo">
+								<use xlink:href="#Logo"></use>
+							</svg>
 
-		<!-- Modal Windows -->
-		<!-- START -->
-		<div id="startModalBg" class="bg startModalBg">
-			<div class="content startModalContent center-anim">
-				<div class="content__wrapper">
-					<svg class="icon content__close startModalContent__close">
-						<use xlink:href="#closeCross"></use>
-					</svg>
-				</div>
-				<div class="startModalContent__container ">
-					<svg class="icon startModalContent__logo">
-						<use xlink:href="#Logo"></use>
-					</svg>
-
-					<div class="startModalContent__buttons">
-						<button class="button startModalContent__enter">Вход</button>
-						<button class="button startModalContent__register">Регистрация</button>
+							<div class="startModalContent__buttons"> 
+								<button class="button startModalContent__enter">Вход</button>
+								<button class="button startModalContent__register">Регистрация</button>
+							</div>
+							<p class="startModalContent__text">Быстрый вход, используя <br> Touch ID</p>
+							<img src="images/SVG/Finger.svg" alt="" class="startModalContent__fingerprint">
+							<p class="startModalContent__text2">Использовать Touch ID</p>
+						</div>
 					</div>
-					<p class="startModalContent__text">Быстрый вход, используя <br> Touch ID</p>
-					<img src="images/SVG/Finger.svg" alt="" class="startModalContent__fingerprint">
-					<p class="startModalContent__text2">Использовать Touch ID</p>
 				</div>
-			</div>
-		</div>
 
-		<!-- ENTER -->
-		<div id="enterModalBg" class="bg enterModalBg">
+				<!-- Enter -->
+				<div id="enterModalBg" class="bg enterModalBg">
 					<div class="content enterModalContent">
 						<div class="content__wrapper">
 							<svg class="icon content__close startModalContent__close">
 								<use xlink:href="#closeCross"></use>
 							</svg>
 						</div>
-						<svg class="icon enterModalContent__logo">
-							<use xlink:href="#Partoflogo"></use>
-						</svg>
 						<div class="enterModalContent__container">
 							<p class="enterModalContent__title">Вход в аккаунт</p>
 							<form class="inputs enterModalContent__inputs">
-								<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
-									<input type="text" class="inputs__input inputs__input--password enterModalContent__password" placeholder="Введите пароль">
+								<input type="text" class="inputs__input enterModalContent__name">
+								<div class="enterModalContent__wrap">
+									<input type="text" class="inputs__input enterModalContent__password">
+									<img src="images/SVG/Eye.svg" alt="">
+								</div>
 							</form>
 							<p class="enterModalContent__forgot">Забыл пароль</p>
 							<button class="button enterModalContent__button">Вход</button>
-							<label class="enterModalContent__remember">
-								<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
-								<span class="enterModalContent__custom-checkbox"></span>
-								<span class="enterModalContent__checktext">Запомнить пароль</span>
-							</label>
-
-							<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
+							<div class="enterModalContent__remember">
+								<input type="checkbox" id="remember" name="remember">
+								<label for="rememeber">Запомнить пароль</label>
+							</div>
+							<p class="enterModalContent__noaccount">Нет аккаунта</p>
 							<p class="enterModalContent__register">Зарегистрируйтесь</p>
-							</div>
 
 						</div>
 					</div>
 				</div>
 
-				<!-- Register -->
-				<div id="registerModalBg" class="bg registerModalBg">
-					<div class="content registerModalContent">
-						<div class="content__wrapper">
-							<svg class="icon content__close registerModalContent__close">
-								<use xlink:href="#closeCross"></use>
-							</svg>
-						</div>
-						<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
-						<div class="registerModalContent__container">
-							<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
-							<form class="inputs registerModalContent__inputs">
-								<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
-								<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
-								<input type="text" class="inputs__input inputs__input--password registerModalContent__password" placeholder="Введите пароль">
-							</form>
-							<button class="button registerModalContent__button">Зарегистрироваться</button>
-							<div class="registerModalContent__wrap">
-							<p class="registerModalContent__textfacebook">Войти з помощью:</p>
-							<img src="images/SVG/facebook.svg" alt="" class="registerModalContent__facebook">
-							</div>
-	
-							<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
-							<p class="registerModalContent__enter">Войти</p>
-							</div>
-
-						</div>
-					</div>
+				<!-- Menu -->
+				<div class="menu menuBtn">
 				</div>
-		<!-- MENU -->
-		<div id="menuBg" class="bg menu-bg ">
-					<div class="content menuContent center-anim">
+				<div id="menuBg" class="bg menu-bg ">
+					<div class="content menuContent">
 						<div class="content__wrapper">
 							<svg class="icon content__close ">
 								<use xlink:href="#closeCross"></use>
 							</svg>
 						</div>
-						<div class="content__info">
-							<h1 class="content__title">Меню</h1>
-							<div class="content__items">
-								<div class="content__item accountBtn">
-									<img src="images/SVG/account.svg" alt="Кабинет">
-									<p>Кабинет</p>
-								</div>
-								<div class="content__item challenge-item go-to-challenge">
-									<img src="images/SVG/menu-challenge.svg" alt="Челендж">
-									<p>Челендж</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-blog.svg" alt="Блог">
-									<p>Блог</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-news.svg" alt="Новости">
-									<p>Новости</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-education.svg" alt="Обучение">
-									<p>Обучение</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-shop.svg" alt="account">
-									<p>Магазин</p>
-								</div>
-								<div class="content__item about-item">
-									<img src="images/SVG/menu-about.svg" alt="О нас" >
-									<p>О нас</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-mail.svg" alt="Контакт">
-									<p>Контакт</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/facebook.svg" alt="Соцсети">
-									<p>Соцсети</p>
-								</div>
+					<div class="content__info">
+						<h1 class="content__title">Меню</h1>
+						<div class="content__items">
+							<div class="content__item accountBtn">
+								<img src="images/SVG/account.svg" alt="Кабинет">
+								<p>Кабинет</p>
+							</div>
+							<div class="content__item challenge-item">
+								<img src="images/SVG/menu-challenge.svg" alt="Челендж">
+								<p>Челендж</p>
+							</div>
+							<div class="content__item">
+								<img src="images/SVG/menu-blog.svg" alt="Блог">
+								<p>Блог</p>
+							</div>
+							<div class="content__item">
+								<img src="images/SVG/menu-news.svg" alt="Новости">
+								<p>Новости</p>
+							</div>
+							<div class="content__item">
+								<img src="images/SVG/menu-education.svg" alt="Обучение">
+								<p>Обучение</p>
+							</div>
+							<div class="content__item">
+								<img src="images/SVG/menu-shop.svg" alt="account">
+								<p>Магазин</p>
+							</div>
+							<div class="content__item about-item">
+								<img src="images/SVG/menu-about.svg" alt="О нас" >
+								<p>О нас</p>
+							</div>
+							<div class="content__item">
+								<img src="images/SVG/menu-mail.svg" alt="Контакт">
+								<p>Контакт</p>
+							</div>
+							<div class="content__item">
+								<img src="images/SVG/facebook.svg" alt="Соцсети">
+								<p>Соцсети</p>
 							</div>
 						</div>
-
 					</div>
-				</div>
-		
-	</header>
-	<main class="about-main">
-		<div class="design-container">
-			<div class="about-main__info">
-			<p>Наш проект создан для поддержки талантливых цифровых художников и дизайнеров и развития их навыков.</p>
-			<p>Участвуя в соревнованнии вы сможете повысить свой скилл и скорость, а победители получат мотивирующее вознаграждение.</p>
-			<p>Также у нас вы можете узнать о новостях цифрового исскуства и дизайна, получить необходимые теоритические знания, пройти углубленное обучение, а также приобрести софт для работы.</p>
-			<h2>История</h2>
-			<p>Проект был организован командой энтузиастовв 2011 г. и нес обучающую функцию.</p>
-			<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
-			<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
-			<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
-			<p>На данный момент более 20 победителей челенджей получили работу в престижных студиях, а еще 4 прошли отбор в европейские студии.</p>
-			<h2>Команда</h2>
-			<div class="slider">
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl2.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl3.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl4.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl5.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl6.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl7.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl8.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl9.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl10.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
+					
 					</div>
 				</div>
 			</div>
-			<p>Наши сотрдуники упорно работают над улучшением сервисов и наполнением сайта. На постоянной основе проводится постоянный поиск вакансий в лучших дизайн студиях страны</p>
-			<div class="about-scroll">
-			<div class="mouse">
-				<div class="dot">
-
-				</div>
+			<img src="images/SVG/logo.svg" alt="Logo" class="startpage__logo">
+			<p class="startpage__text">
+				Принимай участие в соревновании, <br> повышай свой скилл, выигрывай и получи высокооплачиваемую работу!
+			</p>
+			<div class="startpage__wrapper">
+				<button class="button startpage__button"><a href="#" class="button__link startpage__link">Участие в челлендже</a></button>
 			</div>
 		</div>
-			 
-		</div>
-		
-		</div>
-		<div class="design-container design-container__about-info">
-			<button type="button" class="go-to-challenge button-do">Участие в челлендже</button>
-		</div>
-		
-		
-	</main>
+	</div>
+
+
+
 	<!-- Scripts -->
-	
 
-	<!--build:js js/main.min.js -->
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.bundle.min.js"></script>
-	<script src="js/libs/slick/slick.min.js"></script>
-	<script src="js/main.js"></script>
-	<!--endbuild-->
+
+	<script src="js/main.min.js"></script>
 </body>
 </html>
