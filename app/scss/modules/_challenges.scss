@@ -7,8 +7,9 @@
 	content: url('../images/lines.png') ;
 	position:absolute;
 	top:-170%;
+	// height: 185px;
 	overflow: hidden;
-	z-index: -3;
+	//z-index: -3;
 	}
 	 
 	&__title{
@@ -41,6 +42,7 @@
 	}
 }
 .challenges-main{
+	color:#000;
 	//background:#fff;
 	z-index: 5;
 }
