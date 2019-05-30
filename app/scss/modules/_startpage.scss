@@ -20,16 +20,15 @@
 	margin: 0 auto;
 	padding: 0 15px;
 	min-width: 374px;
-
-	height: 100vh;
+	//height: 100vh;
 	&__logo { 
-		padding-top: 215px;
+		padding-top: 50%;
 		width: 100%;
 
 	}
 	&__text {
-		padding-top: 80px;
-		padding-bottom: 120px;
+		padding-top: 20%;
+		padding-bottom: 35%;
 		color: white; 
 		font: 300 0.875rem/1.5 $font; 
 	}
@@ -255,6 +254,6 @@
 
 
 .challenge-item{
-	color: $chalColor;
+	 color: $chalColor;
 
 }
