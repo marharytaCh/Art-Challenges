@@ -37,9 +37,9 @@ body {
 	a{
 		text-decoration: none;
 	}
-// .hidden{
-// 	display: none;
-// }
+.hidden{
+	display: none;
+}
 
 //START
 .navigation{
@@ -357,49 +357,34 @@ body {
 		}
 	}
 
-// Properties for inputs 
+// Properties for inputs in modal windows
 
 .inputs  {
 	width: 80%;
 	display: flex;
 	flex-direction: column;
 
+
 	&__wrapping { 
 		width: 100%;
+		position: relative;
 
 		&::after { 
 			content: "";
 			position: absolute;
-			right: -7px;
-			bottom: 42px;
 			display: block;
 			border:1px solid #fff;
 			border-radius:50%;
 			height: 7px;
 			width: 7px;
 			background: transparent;
-		}
-
-		&--password { 
-			position: relative; 
-			&::before { 
-				content: '';
-				background-image: url('../images/SVG/Eye.svg');
-				background-size: cover;
-				position: absolute;
-				display: block;
-				width: 17px;
-				height: 10px;
-				right: 7px;
-				top: 5px;
-			} 
-
+			right: -7px;
+			top:20px;
 		}
 
 		&:not(:last-child) { 
 			margin-bottom: 20px; 
-		}
-
+		}		
 	}
 
 	&__input { 
@@ -414,5 +399,30 @@ body {
 			color: white;
 		}	
 	}
+
+	&__eye { 
+			position: absolute;
+			display: block;
+			width: 17px;
+			height: 10px;
+			top:5px;
+			right: 3px;
+
+			&::before { 
+				content: '';
+				background-image: url('../images/SVG/Eye.svg');
+				background-size: cover;
+				display: block;
+				position: absolute;
+				width: 17px;
+				height: 10px;
+				right: 0;
+				top: 0;
+			} 
+		}
+
+
+
+
 }
 

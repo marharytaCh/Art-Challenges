@@ -20,15 +20,16 @@
 	margin: 0 auto;
 	padding: 0 15px;
 	min-width: 374px;
-	//height: 100vh;
+
+	height: 100vh;
 	&__logo { 
-		padding-top: 50%;
+		padding-top: 215px;
 		width: 100%;
 
 	}
 	&__text {
-		padding-top: 20%;
-		padding-bottom: 35%;
+		padding-top: 80px;
+		padding-bottom: 120px;
 		color: white; 
 		font: 300 0.875rem/1.5 $font; 
 	}
@@ -127,6 +128,20 @@
 		margin-bottom: 20px;
 	}
 
+	.eye {
+	&::after { 
+				content: '';
+				background-image: url('../images/SVG/Eye.svg');
+				background-size: cover;
+				position: absolute;
+				display: block;
+				width: 17px;
+				height: 10px;
+				right: 7px;
+				top: 5px;
+			}  
+	 }
+
 	&__forgot { 
 		width: 90%;
 		text-align: right;
@@ -211,6 +226,27 @@
 		margin-bottom: 45px;
 	}
 
+	// &__eye { 
+	// 	position: absolute;
+	// 		display: block;
+	// 		top:0;
+	// 		left: 0;
+
+	// 		&::before { 
+	// 			content: '';
+	// 			background-image: url('../images/SVG/Eye.svg');
+	// 			background-size: cover;
+	// 			display: block;
+	// 			position: absolute;
+	// 			width: 17px;
+	// 			height: 10px;
+	// 			right: 0;
+	// 			top: 0;
+	// 		} 
+	// 	}
+
+	 
+
 	&__button { 
 		width: 218px;
 		height: 40px;
@@ -227,33 +263,33 @@
 
 
 	&__textfacebook { 
-	padding-right: 10px; }
-	
-	&__facebook { 
-		width: 16px;
-		height: 16px;
+		padding-right: 10px; }
+
+		&__facebook { 
+			width: 16px;
+			height: 16px;
+		}
+
+		&__wrapper { 
+			width: 80%;
+			display: flex; 
+			justify-content: center;
+
+		}
+
+		&__yesaccount { 
+			padding-right: 16px;
+		}
+
+		&__enter { 
+			color: $orange;
+			font-weight: 600;
+		}
 	}
 
-	&__wrapper { 
-		width: 80%;
-		display: flex; 
-		justify-content: center;
+
+
+	.challenge-item{
+		color: $chalColor;
 
 	}
-
-	&__yesaccount { 
-		padding-right: 16px;
-	}
-
-	&__enter { 
-		color: $orange;
-		font-weight: 600;
-	}
-}
-
-
-
-.challenge-item{
-	 color: $chalColor;
-
-}

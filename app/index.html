@@ -101,11 +101,12 @@
 						<div class="enterModalContent__container">
 							<p class="enterModalContent__title">Вход в аккаунт</p>
 							<form class="inputs enterModalContent__inputs">
-								<div class="inputs__wrapping">
+								<div class="inputs__wrapping enterModalContent__wrapping">
 									<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
 								</div>
-								<div class="inputs__wrapping inputs__wrapping--password">
-									<input type="text" class="inputs__input inputs__input--password enterModalContent__password" placeholder="Введите пароль">
+								<div class="inputs__wrapping enterModalContent__wrapping inputs__wrapping--password">
+									<input type="text" class="inputs__input enterModalContent__password" placeholder="Введите пароль">
+									<span class="inputs__eye registerModalContent__eye"></span>
 								</div>
 							</form>
 							<p class="enterModalContent__forgot">Забыл пароль</p>
@@ -136,15 +137,17 @@
 						<div class="registerModalContent__container">
 							<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
 							<form class="inputs registerModalContent__inputs">
-								<div class="inputs__wrapping">
+								<div class="inputs__wrapping registerModalContent__wrapping">
 									<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
 								</div>
-								<div class="inputs__wrapping">
+								<div class="inputs__wrapping registerModalContent__wrapping">
 									<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
 								</div>
-								<div class="inputs__wrapping inputs__wrapping--password">
-									<input type="text" class="inputs__input inputs__input--password registerModalContent__password" placeholder="Введите пароль">
+								<div class="inputs__wrapping registerModalContent__wrapping inputs__wrapping--password">
+									<input type="text" class="inputs__input registerModalContent__password" placeholder="Введите пароль">
+									<span class="inputs__eye registerModalContent__eye"></span>
 								</div>
+
 							</form>
 							<button class="button registerModalContent__button">Зарегистрироваться</button>
 							<div class="registerModalContent__wrap">
@@ -215,29 +218,25 @@
 						</div>
 					</div>
 				</div>
-
+			</div>
+			<img src="images/SVG/logo.svg" alt="Logo" class="startpage__logo">
+			<p class="startpage__text">
+				Принимай участие в соревновании, <br> повышай свой скилл, выигрывай и получи высокооплачиваемую работу!
+			</p>
+			<div class="startpage__wrapper">
+				<button class="button startpage__button go-to-challenge">Участие в челлендже</button>
 			</div>
 		</div>
 	</div>
-	<img src="images/SVG/logo.svg" alt="Logo" class="startpage__logo">
-	<p class="startpage__text">
-		Принимай участие в соревновании, <br> повышай свой скилл, выигрывай и получи высокооплачиваемую работу!
-	</p>
-	<div class="startpage__wrapper">
-		<button class="button startpage__button go-to-challenge">Участие в челлендже</button>
-	</div>
-</div>
-</div>
+	
+
+	<!-- Scripts -->
 
 
-
-<!-- Scripts -->
-
-
-<!--build:js js/main.min.js -->
-<script src="js/libs/jquery.min.js"></script>
-<script src="js/libs/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-<!--endbuild-->
+	<!--build:js js/main.min.js -->
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
 </body>
 </html>
