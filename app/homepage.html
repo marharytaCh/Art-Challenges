@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Account</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/global.min.css">
+	<!--endbuild-->
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<svg width="0" height="0" class="hidden">
+		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" id="closeCross">
+			<title></title>
+			<path d="M320 274.752L93.728 48.48 48.48 93.728 274.752 320 48.48 546.272l45.248 45.248L320 365.248 546.272 591.52l45.248-45.248L365.248 320 591.52 93.728 546.272 48.48 320 274.752z" fill="#fff"></path>
+		</symbol>
+		<symbol viewBox="0 0 55 37" fill="none" xmlns="http://www.w3.org/2000/svg" id="homepage-video">
+			<path d="M52.623 1H1.906c-.5 0-.906.34-.906.76v33.48c0 .42.406.76.906.76h50.717c.5 0 .906-.34.906-.76V1.76c0-.42-.406-.76-.906-.76zm-.905 33.478H2.81V2.522h48.907v31.956z" fill="#fff" stroke="#fff"></path>
+			<path d="M32.913 19.021l-9.547 5.409V13.613l9.547 5.408z" fill="#fff" stroke="#fff"></path>
+		</symbol>
+
+	</svg>
+	<header class="homepage-header">	
+		<nav class="navigation">
+			<img src="images/SVG/logo.svg" alt="Логотип" class="navigation__logo">
+			<div class="homepage-header__wrap">
+				<img src="images/SVG/homepage-settings.svg" alt="Settings" class="homepage-header__settings">
+				<!-- Menu and menu button -->
+				<div class="menu menuBtn">
+				</div>
+				<div id="menuBg" class="bg menu-bg ">
+					<div class="content menuContent">
+						<div class="content__wrapper">
+							<svg class="icon content__close ">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<div class="content__info">
+							<h1 class="content__title">Меню</h1>
+							<div class="content__items">
+								<div class="content__item accountBtn">
+									<img src="images/SVG/account.svg" alt="Кабинет">
+									<p>Кабинет</p>
+								</div>
+								<div class="content__item challenge-item">
+									<img src="images/SVG/menu-challenge.svg" alt="Челендж">
+									<p>Челендж</p>
+								</div>
+								<div class="content__item">
+									<img src="images/SVG/menu-blog.svg" alt="Блог">
+									<p>Блог</p>
+								</div>
+								<div class="content__item">
+									<img src="images/SVG/menu-news.svg" alt="Новости">
+									<p>Новости</p>
+								</div>
+								<div class="content__item">
+									<img src="images/SVG/menu-education.svg" alt="Обучение">
+									<p>Обучение</p>
+								</div>
+								<div class="content__item">
+									<img src="images/SVG/menu-shop.svg" alt="account">
+									<p>Магазин</p>
+								</div>
+								<div class="content__item about-item">
+									<img src="images/SVG/menu-about.svg" alt="О нас" >
+									<p>О нас</p>
+								</div>
+								<div class="content__item">
+									<img src="images/SVG/menu-mail.svg" alt="Контакт">
+									<p>Контакт</p>
+								</div>
+								<div class="content__item">
+									<img src="images/SVG/facebook.svg" alt="Соцсети">
+									<p>Соцсети</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="homepage-header__wrapper">
+			<img src="images/homepage-img.jpg" alt="Profile photo" class="homepage-header__img">
+			<p class="homepage-header__name">Valeriy_korzun1986</p>
+		</div>
+		<div class="homepage-header__wrapping">
+			<div class="homepage-header__items">
+				<img src="images/SVG/homepage-works.svg" alt="" class="homepage-header__item">
+				<span class="homepage-header__text">120</span>
+			</div>
+			<div class="homepage-header__items">
+				<svg class="icon homepage-header__item  homepage-header__item--video">
+					<use xlink:href="#homepage-video"></use>
+				</svg>
+				<span class="homepage-header__text">4</span>
+			</div>
+			<div class="homepage-header__items">
+				<img src="images/SVG/homepage-friends.svg" alt="" class="homepage-header__item">
+				<span class="homepage-header__text">46</span>
+			</div>
+			<div class="homepage-header__items">
+				<img src="images/SVG/homepage-following.svg" alt="" class="homepage-header__item">
+				<span class="homepage-header__text">156</span>
+			</div>
+		</div>
+	</header>
+	<div class="homepage-main">
+		<div class="homepage-main__wrapper">
+			<div class="homepage-main__section homepage-main__section--mywork"><span class="homepage-main__text">Мои работы</span></div>
+			<div class="homepage-main__section"><span class="homepage-main__text">Мои трансляции</span></div>
+			<div class="homepage-main__section"><span class="homepage-main__text">Сохраненные работы</span></div>
+			<div class="homepage-main__section"><span class="homepage-main__text">Обучающие видео</span></div>
+		</div>
+	</div>
+
+
+
+	<!--build:js js/main.min.js -->
+	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
+</body>
+</html>
