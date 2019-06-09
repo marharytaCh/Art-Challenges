@@ -41,8 +41,8 @@ var paths = {
 var sources = {
 	css: [
 		'./node_modules/bootstrap/dist/css/bootstrap.min.css',
-		'./app/css/libs/slick.css',
-		'./app/css/libs/slick-theme.css'
+		'./app/js/libs/slick/slick.css',
+		'./app/js/libs/slick/slick-theme.css'
 	],
 	js: [
 		'./node_modules/jquery/dist/jquery.min.js',
