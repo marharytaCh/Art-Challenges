@@ -11,7 +11,11 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
+/* ::-webkit-scrollbar { chrome based
+    width: 0px;  ширина scrollbar'a
+    background: transparent;  опционально
+}
+ */
 html {
 	height: 100%;
 	font-size: 16px;
@@ -53,8 +57,21 @@ body {
 		height: 25px;
 	}
 }
+.logo{
+	@media (min-width: $width-sm){
+		display: none;	
+	}
+	
+}
 .design-container{
-	max-width: 340px;
+	@media (max-width: $width-sm){
+		max-width: 340px;
+	}
+	@media (min-width: $width-sm){
+		max-width: 1250px;
+		height:100%;
+	}
+	
 	margin: 0 auto;
 	padding: 0 15px;
 	&__about-info{
@@ -64,41 +81,6 @@ body {
 		align-items: center;
 	}
 
-}
-
-.burger-menu{
-	cursor: pointer;
-	height: 10px;
-	display: flex;
-	align-items: center;
-	transition: all .3s;
-	margin: 9px 15px 0 0;
-	&__item {
-		display: block;
-		width: 26px;
-		height: 2px;
-		background: #fff;
-		position: relative;
-		transition: none;
-
-		&::before,
-		&::after {
-			content: '';
-			width: 26px;
-			height: 2px;
-			position: absolute;
-			left: 0px;
-			background: #fff;
-		// transition: all .3s;
-	}
-
-	&::before {
-		top: -3px;
-	}
-	&::after {
-		bottom: -3px;
-	}
-}
 }
 
 // Button general changes
@@ -258,9 +240,14 @@ body {
 	background: $grey;
 	position:absolute;
 	z-index:3;
-	top:50%; left:50%;
+	top:50%; 
+	left:50%;
 	border-radius:20px;
 	transition: all 0.25s ease-in-out;
+	@media (max-width: $width-sm){
+
+	}
+
 }
 
 .mouse::before{
@@ -334,6 +321,7 @@ body {
 // Properties for menu
 
 .menu {
+
 	width: 24px;
 	height: 2px;
 	background: white;
@@ -355,7 +343,31 @@ body {
 		&::after  {
 			top: 8px; 
 		}
+		@media (min-width: $width-sm){
+		display: none;
 	}
+}
+.menu-desktop{
+	@media (max-width: $width-sm){
+		display: none;
+	}
+	display: flex;
+	align-items: center;
+	&__item{
+		padding-right: 25px;
+	}
+	&__link{
+		&:hover{
+			text-decoration: none;
+			color: #fff;
+			opacity: 0.5;
+			transition: all .3s;
+		}
+		color: #fff;
+	}
+
+}
+
 
 // Properties for inputs in modal windows
 
@@ -422,6 +434,7 @@ body {
 	}
 }
 
+
 // Homepage sections styles
 .homepage-section { 
 	height: 65px;
@@ -436,6 +449,5 @@ body {
 .homepage-text { 
 	font-weight: 600;
 }
-
 
 
