@@ -37,9 +37,9 @@ body {
 	a{
 		text-decoration: none;
 	}
-.hidden{
-	display: none;
-}
+	.hidden{
+		display: none;
+	}
 
 //START
 .navigation{
@@ -401,28 +401,41 @@ body {
 	}
 
 	&__eye { 
-			position: absolute;
+		position: absolute;
+		display: block;
+		width: 17px;
+		height: 10px;
+		top:5px;
+		right: 3px;
+
+		&::before { 
+			content: '';
+			background-image: url('../images/SVG/Eye.svg');
+			background-size: cover;
 			display: block;
+			position: absolute;
 			width: 17px;
 			height: 10px;
-			top:5px;
-			right: 3px;
-
-			&::before { 
-				content: '';
-				background-image: url('../images/SVG/Eye.svg');
-				background-size: cover;
-				display: block;
-				position: absolute;
-				width: 17px;
-				height: 10px;
-				right: 0;
-				top: 0;
-			} 
-		}
-
-
-
-
+			right: 0;
+			top: 0;
+		} 
+	}
 }
+
+// Homepage sections styles
+.homepage-section { 
+	height: 65px;
+	width: 76%;
+	background: #323e57;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.homepage-text { 
+	font-weight: 600;
+}
+
+
 

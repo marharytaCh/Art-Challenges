@@ -41,12 +41,16 @@ var paths = {
 var sources = {
 	css: [
 		'./node_modules/bootstrap/dist/css/bootstrap.min.css',
+		'./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css',
+		
 		'./app/css/libs/slick.css',
 		'./app/css/libs/slick-theme.css'
 	],
 	js: [
 		'./node_modules/jquery/dist/jquery.min.js',
 		'./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+		
+		'./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
 		'./app/js/libs/slick/slick.min.js'
 	]
 };
