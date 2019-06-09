@@ -11,6 +11,7 @@
 
 	<!--build:css css/styles.min.css-->
 	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/global.min.css">
 	<!--endbuild-->
 
@@ -88,6 +89,93 @@
 						</div>
 					</div>
 				</div>
+				<!-- Modal Windows -->
+				<!-- START -->
+				<div id="startModalBg" class="bg startModalBg">
+					<div class="content startModalContent center-anim">
+						<div class="content__wrapper">
+							<svg class="icon content__close startModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<div class="startModalContent__container ">
+							<svg class="icon startModalContent__logo">
+								<use xlink:href="#Logo"></use>
+							</svg>
+
+							<div class="startModalContent__buttons">
+								<button class="button startModalContent__enter">Вход</button>
+								<button class="button startModalContent__register">Регистрация</button>
+							</div>
+							<p class="startModalContent__text">Быстрый вход, используя <br> Touch ID</p>
+							<img src="images/SVG/Finger.svg" alt="" class="startModalContent__fingerprint">
+							<p class="startModalContent__text2">Использовать Touch ID</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- ENTER -->
+				<div id="enterModalBg" class="bg enterModalBg">
+					<div class="content enterModalContent">
+						<div class="content__wrapper">
+							<svg class="icon content__close startModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<svg class="icon enterModalContent__logo">
+							<use xlink:href="#Partoflogo"></use>
+						</svg>
+						<div class="enterModalContent__container">
+							<p class="enterModalContent__title">Вход в аккаунт</p>
+							<form class="inputs enterModalContent__inputs">
+								<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
+								<input type="text" class="inputs__input inputs__input--password enterModalContent__password" placeholder="Введите пароль">
+							</form>
+							<p class="enterModalContent__forgot">Забыл пароль</p>
+							<button class="button enterModalContent__button">Вход</button>
+							<label class="enterModalContent__remember">
+								<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
+								<span class="enterModalContent__custom-checkbox"></span>
+								<span class="enterModalContent__checktext">Запомнить пароль</span>
+							</label>
+
+							<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
+								<p class="enterModalContent__register">Зарегистрируйтесь</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Register -->
+				<div id="registerModalBg" class="bg registerModalBg">
+					<div class="content registerModalContent">
+						<div class="content__wrapper">
+							<svg class="icon content__close registerModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
+						<div class="registerModalContent__container">
+							<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
+							<form class="inputs registerModalContent__inputs">
+								<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
+								<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
+								<input type="text" class="inputs__input inputs__input--password registerModalContent__password" placeholder="Введите пароль">
+							</form>
+							<button class="button registerModalContent__button">Зарегистрироваться</button>
+							<div class="registerModalContent__wrap">
+								<p class="registerModalContent__textfacebook">Войти з помощью:</p>
+								<img src="images/SVG/facebook.svg" alt="" class="registerModalContent__facebook">
+							</div>
+							
+							<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
+								<p class="registerModalContent__enter">Войти</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</nav>
 		<div class="homepage-header__wrapper">
@@ -117,10 +205,70 @@
 	</header>
 	<div class="homepage-main">
 		<div class="homepage-main__wrapper">
-			<div class="homepage-main__section homepage-main__section--mywork"><span class="homepage-main__text">Мои работы</span></div>
-			<div class="homepage-main__section"><span class="homepage-main__text">Мои трансляции</span></div>
-			<div class="homepage-main__section"><span class="homepage-main__text">Сохраненные работы</span></div>
-			<div class="homepage-main__section"><span class="homepage-main__text">Обучающие видео</span></div>
+			<div class="homepage-main__section homepage-main__section--mywork homepage-section"><span class="homepage-main__text homepage-main__text--btn  homepage-text">Мои работы</span></div>
+			<div class="homepage-main__modalbg" id="modal_bg">
+				<div class="homepage-main__modalcontent">
+					<div class="homepage-main__works homepage-section">
+						<span class="homepage-text homepage-main__modaltext">Мои работы</span>
+						<div class="homepage-main__arrow"></div>
+					</div>
+					<div class="homepage-main__workswrap">
+						<a data-fancybox="gallery" href="images/4.png">
+							<img src="images/4.png">
+						</a>
+
+						<a data-fancybox="gallery" href="images/6.png">
+							<img src="images/6.png">
+						</a>
+						<a data-fancybox="gallery" href="images/4.png">
+							<img src="images/4.png">
+						</a>
+
+						<a data-fancybox="gallery" href="images/6.png">
+							<img src="images/6.png">
+						</a>
+						<a data-fancybox="gallery" href="images/4.png">
+							<img src="images/4.png">
+						</a>
+
+						<a data-fancybox="gallery" href="images/6.png">
+							<img src="images/6.png">
+						</a>
+						<a data-fancybox="gallery" href="images/4.png">
+							<img src="images/4.png">
+						</a>
+
+						<a data-fancybox="gallery" href="images/6.png">
+							<img src="images/6.png">
+						</a>
+						<a data-fancybox="gallery" href="images/4.png">
+							<img src="images/4.png">
+						</a>
+
+						<a data-fancybox="gallery" href="images/6.png">
+							<img src="images/6.png">
+						</a>
+						<a data-fancybox="gallery" href="images/4.png">
+							<img src="images/4.png">
+						</a>
+
+						<a data-fancybox="gallery" href="images/6.png">
+							<img src="images/6.png">
+						</a>
+						
+					</div>
+					<div class="button homepage-main__button">Добавить работу</div>
+					<div class="homepage-scroll">
+						<div class="mouse">
+							<div class="dot">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="homepage-main__section  homepage-section"><span class="homepage-main__text homepage-text">Мои трансляции</span></div>
+			<div class="homepage-main__section  homepage-section"><span class="homepage-main__text homepage-text">Сохраненные работы</span></div>
+			<div class="homepage-main__section  homepage-section"><span class="homepage-main__text homepage-text">Обучающие видео</span></div>
 		</div>
 	</div>
 
@@ -129,6 +277,7 @@
 	<!--build:js js/main.min.js -->
 	<script src="js/libs/jquery.min.js"></script>
 	<script src="js/libs/bootstrap.bundle.min.js"></script>
+	<script src="js/libs/jquery.fancybox.min.js"></script>
 	<script src="js/main.js"></script>
 	<!--endbuild-->
 </body>
