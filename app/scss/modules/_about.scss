@@ -1,53 +1,170 @@
 .about-body{
 	font-size: 16px;
-	background: $blue;
+	@media (max-width: $width-sm){
+			background: $blue;
+		}
+	@media (min-width: $width-sm){
+		background: url('../images/about-bg-desktop.jpg') no-repeat top center;
+		background-size: cover;
+
+	}
 	// background-size: cover;
 	position: relative;
 	// opacity: 0.7;
 	&::after{
-		content:url('../images/lines.png');
-		@include pos($t:0, $r:0, $l:0);
-		opacity: 0.7;
-		z-index: -3; 
+			//content:'';
+		@media (min-width: $width-sm){
+			//content:url('../images/about-line-desktop.png');
+			// background-image: url('../images/about-line-desktop.png') no-repeat top center;
+			@include pos($r:0, $b:0);
+			opacity: 0.5;
+			z-index: -3; 
+		}
+		@media (max-width: $width-sm){
+			content:url('../images/lines.png');
+			// background: url('../images/lines.png') no-repeat top center;
+			
+			@include pos($t:0, $r:0);
+			opacity: 0.7;
+			z-index: -3; 
+		}
+		
 	}
 }
 
-.about-header{	 
-	z-index: 1;
+.about-main__info-desktop {
+	.about-main__info-first {
+		margin: 0 0 3%;
+		img {
+			margin: 0 70px 0 0;
+		}
+	}
+
+	.about-main__info-second {
+		display: flex;
+
+		img {
+			margin: 0 0 0 80px;
+		}
+	}
+	.about-main__info-third{
+		@media (min-width: $width-sm){
+			text-align: center
+		}
+		h2{
+			font-size: 1.185rem;
+			font-weight: 700;
+			padding: 50px 0;
+		}
+		p{
+			line-height: 1.5;
+		}
+		
+	}
+}
+
+
+.about-header{	
+ @media (max-width: $width-sm){
+ 	z-index: 1;
 	position: relative;
 	min-height: 30vh;
+ }
+	
 	&::before{
-		content:url('../images/about-header-bg.png');
+		@media (max-width: $width-sm){
+			content:url('../images/about-header-bg.png');
 		opacity: 0.7;
 		height: 100%;
 		@include pos($t:0, $l:0);
 		z-index: -4;
+		}
+		
 	}
 	
 }
 .about-main{
-	margin-top: 2%;
+	@media (max-width: $width-sm){
+		margin-top: 2%;
+	}
+	
 	height: 70vh;
 	
 	&__info{
-		font-family: $font;
-		font-size: 0.875rem;
-		color: #fff;
-		height: 49vh;
-		overflow-y: scroll;
-		position: relative;
-		margin-bottom: 15%;
-		> p{
-			padding-bottom: 25px;
-			line-height: 1.25rem
+			font-family: $font;
+			color: #fff;
+			// overflow: hidden;
+
+		&-mobile{
+			@media (min-width: $width-sm){
+				display: none;
+			}
+			@media (max-width: $width-sm){
+
+				display:block;
+				height: 49vh;
+				overflow-y: scroll;
+				
+				font-size: 0.875rem;
+			}
+			font-family: $font;
+			font-size: 0.875rem;
+			color: #fff;
+
+
+			position: relative;
+			margin-bottom: 15%;
+			p{
+				padding-bottom: 25px;
+				line-height: 1.25rem
+			}
+			h2{
+				font-size: 1.25rem;
+				padding-bottom: 25px;
+				font-weight: 500;
+			}
+			&-one{
+
+			}
+
 		}
-		h2{
-			font-size: 1.25rem;
-			padding-bottom: 25px;
-			font-weight: 500;
+
+		&-desktop{
+			
+			@media (max-width: $width-sm){
+				display: none;
+			}
+			@media (min-width: $width-sm){
+				/* -ms-overflow-style: none;  IE 10+
+				    scrollbar-width: none; Firefox */
+				height: 80%;
+				overflow-y: scroll;
+				font-size: 1rem;
+				padding: 40px 100px 0 0;
+				/* padding-right: 17px; Increase/decrease this value for cross-browser compatibility
+				    box-sizing: content-box; So the width will be 100% + 17px */
+			}
+			p{
+				//padding-bottom: 25px;
+				//line-height: 1.25rem
+			}
+		}
+		&-first{
+			display: flex;
+		}
+		&-second{
+			
+			h2{
+				font-size: 1.25rem;
+				line-height: 1.8125rem;
+				font-weight: 700;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+
 		}
 	}
-
 }
 
 
@@ -58,6 +175,9 @@
 	}
 }
 .button-do{
+	@media (min-width: $width-sm){
+		margin-top: 95px;
+	}
 	background: $orange;
 	border-radius: 4px;
 	padding: 16px 40px;
@@ -68,27 +188,48 @@
 
 .about-scroll{
 	position: fixed;
-	bottom: 22%;
-	right: 10%;
+	
 	z-index:10;
+	@media (max-width: $width-sm){
+		bottom: 22%;
+	right: 10%;
+	}
+	@media (min-width: $width-sm){
+		bottom: 35%;
+	right: 15%;
+	}
 }
 
 .slider{
 	&__item{
 		img{
+			@media (max-width: $width-sm){
+				width: 85%;
+			padding-bottom: 5px;
+			}
 			width: 85%;
 			padding-bottom: 5px;
 			
 		}
+		@media (max-width: $width-sm){
+				padding-top: 20px;
+		padding-bottom: 30px;
+			}
 		padding-top: 20px;
 		padding-bottom: 30px;
 	}
 	
 }
 .slick-active{
-	-webkit-filter: brightness(50%);
+	@media (max-width: $width-sm){
+		-webkit-filter: brightness(50%);
+	}
+	
 }
 .slick-active.slick-center  {
-    transform: scale(1.2);
+	@media (max-width: $width-sm){
+		  transform: scale(1.2);
   	-webkit-filter: brightness(100%);
+	}
+  
 }

@@ -19,7 +19,7 @@
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<![endif]-->
 </head>
 <body class="about-body">
 	<svg width="0" height="0" class="hidden">
@@ -67,16 +67,40 @@
 	<header class="about-header">
 		<!-- <img src="images/about-header-bg.png" alt="" class="about-header__img"> -->
 		<div class="design-container">
-		<nav class="navigation">
-			<img src="images/SVG/account.svg" alt="Логотип" class="navigation__account accountBtn">
+			<nav class="navigation">
+				<img src="images/SVG/account.svg" alt="Логотип" class="navigation__account accountBtn">
 
-			<div  class="menu menuBtn">
-			</div>
-			
-		</nav>
-		<a href="" class="logo">
-			<img src="images/SVG/logo.svg" alt="Логотип" class="logo__icon">
-		</a>
+				<div  class="menu menuBtn">
+				</div>
+
+				<ul class="menu-desktop">
+					<li class="menu-desktop__item ">
+						<a href="#home" class="menu-desktop__link ">Челендж</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#about" class="menu-desktop__link ">Блог</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#" class="menu-desktop__link">Новости</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#" class="menu-desktop__link">Обучение</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#contact" class="menu-desktop__link">Магазин</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#contact" class="menu-desktop__link">О нас</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#contact" class="menu-desktop__link"><img src="images/SVG/menu-mail.svg" alt="Контакт"></a>
+					</li>
+				</ul>
+				
+			</nav>
+			<a href="" class="logo">
+				<img src="images/SVG/logo.svg" alt="Логотип" class="logo__icon">
+			</a>
 		</div>
 
 		<!-- Modal Windows -->
@@ -106,231 +130,334 @@
 
 		<!-- ENTER -->
 		<div id="enterModalBg" class="bg enterModalBg">
-					<div class="content enterModalContent">
-						<div class="content__wrapper">
-							<svg class="icon content__close startModalContent__close">
-								<use xlink:href="#closeCross"></use>
-							</svg>
-						</div>
-						<svg class="icon enterModalContent__logo">
-							<use xlink:href="#Partoflogo"></use>
-						</svg>
-						<div class="enterModalContent__container">
-							<p class="enterModalContent__title">Вход в аккаунт</p>
-							<form class="inputs enterModalContent__inputs">
-								<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
-									<input type="text" class="inputs__input inputs__input--password enterModalContent__password" placeholder="Введите пароль">
-							</form>
-							<p class="enterModalContent__forgot">Забыл пароль</p>
-							<button class="button enterModalContent__button">Вход</button>
-							<label class="enterModalContent__remember">
-								<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
-								<span class="enterModalContent__custom-checkbox"></span>
-								<span class="enterModalContent__checktext">Запомнить пароль</span>
-							</label>
-
-							<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
-							<p class="enterModalContent__register">Зарегистрируйтесь</p>
-							</div>
-
-						</div>
-					</div>
+			<div class="content enterModalContent">
+				<div class="content__wrapper">
+					<svg class="icon content__close startModalContent__close">
+						<use xlink:href="#closeCross"></use>
+					</svg>
 				</div>
+				<svg class="icon enterModalContent__logo">
+					<use xlink:href="#Partoflogo"></use>
+				</svg>
+				<div class="enterModalContent__container">
+					<p class="enterModalContent__title">Вход в аккаунт</p>
+					<form class="inputs enterModalContent__inputs">
+						<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
+						<input type="text" class="inputs__input inputs__input--password enterModalContent__password" placeholder="Введите пароль">
+					</form>
+					<p class="enterModalContent__forgot">Забыл пароль</p>
+					<button class="button enterModalContent__button">Вход</button>
+					<label class="enterModalContent__remember">
+						<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
+						<span class="enterModalContent__custom-checkbox"></span>
+						<span class="enterModalContent__checktext">Запомнить пароль</span>
+					</label>
 
-				<!-- Register -->
-				<div id="registerModalBg" class="bg registerModalBg">
-					<div class="content registerModalContent">
-						<div class="content__wrapper">
-							<svg class="icon content__close registerModalContent__close">
-								<use xlink:href="#closeCross"></use>
-							</svg>
-						</div>
-						<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
-						<div class="registerModalContent__container">
-							<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
-							<form class="inputs registerModalContent__inputs">
-								<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
-								<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
-								<input type="text" class="inputs__input inputs__input--password registerModalContent__password" placeholder="Введите пароль">
-							</form>
-							<button class="button registerModalContent__button">Зарегистрироваться</button>
-							<div class="registerModalContent__wrap">
-							<p class="registerModalContent__textfacebook">Войти з помощью:</p>
-							<img src="images/SVG/facebook.svg" alt="" class="registerModalContent__facebook">
-							</div>
-	
-							<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
-							<p class="registerModalContent__enter">Войти</p>
-							</div>
-
-						</div>
+					<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
+						<p class="enterModalContent__register">Зарегистрируйтесь</p>
 					</div>
+
 				</div>
+			</div>
+		</div>
+
+		<!-- Register -->
+		<div id="registerModalBg" class="bg registerModalBg">
+			<div class="content registerModalContent">
+				<div class="content__wrapper">
+					<svg class="icon content__close registerModalContent__close">
+						<use xlink:href="#closeCross"></use>
+					</svg>
+				</div>
+				<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
+				<div class="registerModalContent__container">
+					<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
+					<form class="inputs registerModalContent__inputs">
+						<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
+						<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
+						<input type="text" class="inputs__input inputs__input--password registerModalContent__password" placeholder="Введите пароль">
+					</form>
+					<button class="button registerModalContent__button">Зарегистрироваться</button>
+					<div class="registerModalContent__wrap">
+						<p class="registerModalContent__textfacebook">Войти з помощью:</p>
+						<img src="images/SVG/facebook.svg" alt="" class="registerModalContent__facebook">
+					</div>
+					
+					<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
+						<p class="registerModalContent__enter">Войти</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
 		<!-- MENU -->
 		<div id="menuBg" class="bg menu-bg ">
-					<div class="content menuContent center-anim">
-						<div class="content__wrapper">
-							<svg class="icon content__close ">
-								<use xlink:href="#closeCross"></use>
-							</svg>
+			<div class="content menuContent center-anim">
+				<div class="content__wrapper">
+					<svg class="icon content__close ">
+						<use xlink:href="#closeCross"></use>
+					</svg>
+				</div>
+				<div class="content__info">
+					<h1 class="content__title">Меню</h1>
+					<div class="content__items">
+						<div class="content__item accountBtn">
+							<img src="images/SVG/account.svg" alt="Кабинет">
+							<p>Кабинет</p>
 						</div>
-						<div class="content__info">
-							<h1 class="content__title">Меню</h1>
-							<div class="content__items">
-								<div class="content__item accountBtn">
-									<img src="images/SVG/account.svg" alt="Кабинет">
-									<p>Кабинет</p>
-								</div>
-								<div class="content__item challenge-item go-to-challenge">
-									<img src="images/SVG/menu-challenge.svg" alt="Челендж">
-									<p>Челендж</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-blog.svg" alt="Блог">
-									<p>Блог</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-news.svg" alt="Новости">
-									<p>Новости</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-education.svg" alt="Обучение">
-									<p>Обучение</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-shop.svg" alt="account">
-									<p>Магазин</p>
-								</div>
-								<div class="content__item about-item">
-									<img src="images/SVG/menu-about.svg" alt="О нас" >
-									<p>О нас</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/menu-mail.svg" alt="Контакт">
-									<p>Контакт</p>
-								</div>
-								<div class="content__item">
-									<img src="images/SVG/facebook.svg" alt="Соцсети">
-									<p>Соцсети</p>
-								</div>
-							</div>
+						<div class="content__item challenge-item go-to-challenge">
+							<img src="images/SVG/menu-challenge.svg" alt="Челендж">
+							<p>Челендж</p>
 						</div>
-
+						<div class="content__item">
+							<img src="images/SVG/menu-blog.svg" alt="Блог">
+							<p>Блог</p>
+						</div>
+						<div class="content__item">
+							<img src="images/SVG/menu-news.svg" alt="Новости">
+							<p>Новости</p>
+						</div>
+						<div class="content__item">
+							<img src="images/SVG/menu-education.svg" alt="Обучение">
+							<p>Обучение</p>
+						</div>
+						<div class="content__item">
+							<img src="images/SVG/menu-shop.svg" alt="account">
+							<p>Магазин</p>
+						</div>
+						<div class="content__item about-item">
+							<img src="images/SVG/menu-about.svg" alt="О нас" >
+							<p>О нас</p>
+						</div>
+						<div class="content__item">
+							<img src="images/SVG/menu-mail.svg" alt="Контакт">
+							<p>Контакт</p>
+						</div>
+						<div class="content__item">
+							<img src="images/SVG/facebook.svg" alt="Соцсети">
+							<p>Соцсети</p>
+						</div>
 					</div>
 				</div>
+
+			</div>
+		</div>
 		
 	</header>
+
 	<main class="about-main">
 		<div class="design-container">
-			<div class="about-main__info">
-			<p>Наш проект создан для поддержки талантливых цифровых художников и дизайнеров и развития их навыков.</p>
-			<p>Участвуя в соревнованнии вы сможете повысить свой скилл и скорость, а победители получат мотивирующее вознаграждение.</p>
-			<p>Также у нас вы можете узнать о новостях цифрового исскуства и дизайна, получить необходимые теоритические знания, пройти углубленное обучение, а также приобрести софт для работы.</p>
-			<h2>История</h2>
-			<p>Проект был организован командой энтузиастовв 2011 г. и нес обучающую функцию.</p>
-			<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
-			<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
-			<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
-			<p>На данный момент более 20 победителей челенджей получили работу в престижных студиях, а еще 4 прошли отбор в европейские студии.</p>
-			<h2>Команда</h2>
-			<div class="slider">
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl1.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
+			<div class="about-main__info-mobile">
+				<p>Наш проект создан для поддержки талантливых цифровых художников и дизайнеров и развития их навыков.</p>
+				<p>Участвуя в соревнованнии вы сможете повысить свой скилл и скорость, а победители получат мотивирующее вознаграждение.</p>
+				<p>Также у нас вы можете узнать о новостях цифрового исскуства и дизайна, получить необходимые теоритические знания, пройти углубленное обучение, а также приобрести софт для работы.</p>
+				<h2>История</h2>
+				<p>Проект был организован командой энтузиастовв 2011 г. и нес обучающую функцию.</p>
+				<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
+				<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
+				<p>Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу.</p>
+				<p>На данный момент более 20 победителей челенджей получили работу в престижных студиях, а еще 4 прошли отбор в европейские студии.</p>
+				<h2>Команда</h2>
+				<div class="slider">
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl1.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl2.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl3.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl4.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl5.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl6.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl7.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl8.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl9.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
+					</div>
+					<div>
+						<div class="slider__item">
+							<img src="images/header-sl10.png" alt="Наш работник">
+							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__position">СЕО</p>
+						</div>
 					</div>
 				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl2.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl3.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl4.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl5.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl6.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl7.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl8.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl9.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-				<div>
-					<div class="slider__item">
-						<img src="images/header-sl10.png" alt="Наш работник">
-						<p class="slider__name">Аркадий Укупник,</p>
-						<p class="slider__position">СЕО</p>
-					</div>
-				</div>
-			</div>
-			<p>Наши сотрдуники упорно работают над улучшением сервисов и наполнением сайта. На постоянной основе проводится постоянный поиск вакансий в лучших дизайн студиях страны</p>
-			<div class="about-scroll">
-			<div class="mouse">
-				<div class="dot">
+				<p>Наши сотрдуники упорно работают над улучшением сервисов и наполнением сайта. На постоянной основе проводится постоянный поиск вакансий в лучших дизайн студиях страны</p>
+				<div class="about-scroll">
+					<div class="mouse">
+						<div class="dot">
 
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-			 
-		</div>
-		
-		</div>
-		<div class="design-container design-container__about-info">
-			<button type="button" class="go-to-challenge button-do">Участие в челлендже</button>
-		</div>
-		
-		
+
+			<div class="about-main__info-desktop">
+				<div class="about-main__info-first">
+					<img src="images/about-header-bg.png" alt="" class="about-main__info-one">
+
+					<p>Наш проект создан для поддержки талантливых цифровых художников и дизайнеров и развития их навыков.
+						<br><br>
+						Участвуя в соревнованнии вы сможете повысить свой скилл и скорость, а победители получат мотивирующее вознаграждение.
+						<br><br>
+					Также у нас вы можете узнать о новостях цифрового исскуства и дизайна, получить необходимые теоритические знания, пройти углубленное обучение, а также приобрести софт для работы.</p>
+				</div>
+
+				<div class="about-main__info-second">
+					<div class="">
+						<h2>История</h2>
+						<p>Проект был организован командой энтузиастовв 2011 г. и нес обучающую функцию. <br><br>
+							Осознав важность мотивацию в развитии молодых дизайнеров и художников в 2013 г. были проведены переговоры с дизайн студиями Киева и Днепропетровска о проведении стажировок наиболее талантливых художников. В этом году 5 победителей челенджов получили работу. <br><br> На данный момент более 20 победителей челенджей получили работу в престижных студиях, а еще 4 прошли отбор в европейские студии.</p>
+						</div>
+						<img src="images/about-desktop-2.jpg" alt="" class="about-main__info-one">
+					</div>
+					<div class="about-main__info-third">
+						
+					
+					<h2>Команда</h2>
+					<div class="slider">
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl1.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl2.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl3.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl6.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl5.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl6.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl7.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl8.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl9.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+						<div>
+							<div class="slider__item">
+								<img src="images/header-sl10.png" alt="Наш работник">
+								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__position">СЕО</p>
+							</div>
+						</div>
+					</div>
+					<p>Наши сотрдуники упорно работают над улучшением сервисов и наполнением сайта. На постоянной основе проводится постоянный поиск вакансий в лучших дизайн студиях страны</p></div>
+					<div class="about-scroll">
+						<div class="mouse">
+							<div class="dot">
+
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="design-container__about-info">
+				<button type="button" class="go-to-challenge button-do">Участие в челлендже</button>
+			</div>
+		</div>			
 	</main>
-	<!-- Scripts -->
-	
+		<!-- Scripts -->
+		
 
-	<!--build:js js/main.min.js -->
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.bundle.min.js"></script>
-	<script src="js/libs/slick/slick.min.js"></script>
-	<script src="js/main.js"></script>
-	<!--endbuild-->
-</body>
-</html>
+		<!--build:js js/main.min.js -->
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/bootstrap.bundle.min.js"></script>
+		<script src="js/libs/slick/slick.min.js"></script>
+		<script src="js/main.js"></script>
+		<!--endbuild-->
+	</body>
+	</html>

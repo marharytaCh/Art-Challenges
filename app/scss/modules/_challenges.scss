@@ -1,14 +1,16 @@
 .challenges-header{
 	height: 185px;
+	width: 100%;
 	background-color: $blue;
 	border-radius: 4px;
 	position: relative;
+	overflow: hidden;
 	 &::before{
 	content: url('../images/lines.png') ;
 	position:absolute;
 	top:-170%;
 	// height: 185px;
-	overflow: hidden;
+	
 	//z-index: -3;
 	}
 	 
@@ -45,6 +47,15 @@
 	color:#000;
 	//background:#fff;
 	z-index: 5;
+
+	&-slider{
+		/* width: 200px;
+		max-width: 1230px;
+			margin: 0 auto;
+			width: 100%;
+			padding: 0 15px;
+			position: relative; */
+	}
 }
 
 .navigation{
