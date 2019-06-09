@@ -73,13 +73,15 @@ $('.menuBtn').click(function(){
 })
 
 $('.startModalContent__enter').click(function(){
-
 	enterModalBg.style.display = 'block';
 })
 
 $('.startModalContent__register').click(function(){
-
 	registerModalBg.style.display = 'block';
+})
+
+$('.homepage-main__text--btn').click(function(){
+	modal_bg.style.display = 'block';
 })
 
 //CLOSE MODAL WINDOWS
@@ -90,6 +92,9 @@ $('.content__close').click(function(){
 	registerModalBg.style.display = 'none';
 })
 
+$('.homepage-main__works').click(function(){
+	modal_bg.style.display = 'none';
+})
 
 
 /*var registerBg = document.getElementsByClassName('startModalBg')[0];
