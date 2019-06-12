@@ -3,17 +3,39 @@
 (function($){
 	$(document).ready(function() {
 		// Code
-		if($(window).width() < 576) {
+		$('.slider').slick({
+			infinite: true,
+			slidesToShow: 6,
+			slidesToScroll: 2,
+			dots: false,
+			arrows:false,
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '80px',
+					slidesToShow: 1,
+					variableWidth: true,
+				}
+			}
+		]
+		});
+		/*if ($(window).innerWidth() < 576){
 			$('.slider').slick({
-
-				centerPadding: '60px',
-				slidesToShow: 3,
 				centerMode: true,
-				slidesToScroll: 1,               
-				dots: false,
-				arrows:false,
-				infinite: true, 
-				variableWidth: true,  
+				centerPadding: '60px',
+				slidesToShow: 1,
 
 			});
 		} else {
@@ -22,35 +44,50 @@
 				// centerPadding: '60px',
 				infinite: true,
 				slidesToShow: 6,
-				slidesToScroll: 1,              
+				slidesToScroll: 2,              
 				dots: false,
 				arrows:false,
-				infinite: true, 
-				// variableWidth: true,  
+				//infinite: true,
+				// variableWidth: true,
 
 			});
-		}
+		}*/
 		
-		$('.multiple-items').slick({
+		$('.challenges-slider').slick({
+			centerMode: true,
 			centerPadding: '60px',
 			slidesToShow: 3,
-			centerMode: true,
-			slidesToScroll: 1,               
-			dots: false,
-			arrows:false,
-			infinite: true, 
-			variableWidth: true,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '40px',
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '40px',
+						slidesToShow: 1
+					}
+				}
+			]
 		});
 	});
-	$(".go-to-challenge").click(function(){
+	/*$(".go-to-challenge").click(function(){
 		GoToChallengePage("challenges.html")
-	})
+	})*/
 	/*$(".button-do").click(function(){
 		GoToChallengePage("challenges.html")
 	})*/
-	$('.about-item').click(function(){
+	/*$('.about-item').click(function(){
 		GoToChallengePage('about.html')
-	})
+	})*/
 	/*$('.startpage__button').click(function(){
 		GoToChallengePage("challenges.html")
 	})*/
