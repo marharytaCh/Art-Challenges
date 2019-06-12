@@ -50,7 +50,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
-	padding-top: 45px;
+	@media (max-width: $width-sm){
+		padding-top: 35px;
+	}
+	@media (min-width: $width-sm){
+		padding-top: 50px;
+	}
+
+	align-items: center;
 
 	&__account { 
 		width: 25px;
@@ -64,12 +71,14 @@ body {
 	
 }
 .design-container{
+
 	@media (max-width: $width-sm){
 		max-width: 340px;
 	}
 	@media (min-width: $width-sm){
 		max-width: 1250px;
 		height:100%;
+		position: relative;
 	}
 	
 	margin: 0 auto;
@@ -128,6 +137,7 @@ body {
 
 	&__close { 
 		width: 20px;
+
 		height: 20px;
 		margin:20px 20px;
 		overflow: hidden;
@@ -176,11 +186,28 @@ body {
 	}
 
 	&__item{
+		color:#fff;
 		img{
 			width: 30px;
 			height: 30px;}
 		}
+	&__link{
+		color: #fff;
+		text-decoration: none;
+		&--orange{
+			color: $chalColor;
+		}
+		&:hover{
+			color:inherit;
+			text-decoration: none;
+		}
+		&:active{
+			color:inherit;
+			text-decoration: none;
+		}
 	}
+}
+
 
 	.center-anim{
 		animation-name: fadeIn;
@@ -230,6 +257,7 @@ body {
         	opacity: 1; 
         }       
     }
+
 
 //SCROLL
 
@@ -295,7 +323,6 @@ body {
 	background: #EF811F;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
-	-o-border-radius:3px;
 	border-radius:3px;
 	-webkit-animation: scrollWheel 1.5s linear infinite;
 	-moz-animation: scrollWheel 1.5s linear infinite;
@@ -367,6 +394,7 @@ body {
 	}
 
 }
+
 
 
 // Properties for inputs in modal windows
