@@ -1,7 +1,7 @@
 .startpageContainer { 
 	background: url('../images/startPageBg.jpg') no-repeat;
 	background-size: cover;
-	height: 100vh;
+	//height: 100vh;
 	position: relative;
 	z-index: 999;
 
@@ -19,24 +19,27 @@
 .startpage{
 	margin: 0 auto;
 	padding: 0 15px;
-	min-width: 374px;
-
+	min-width: 320px;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	&__logo { 
-		padding-top: 215px;
+		//padding-top: 55%;
 		width: 100%;
 
 	}
 	&__text {
-		padding-top: 80px;
-		padding-bottom: 120px;
+		padding-top: 23%;
+		//padding-bottom: 34%;
 		color: white; 
 		font: 300 0.875rem/1.5 $font; 
 	}
 	&__wrapper { 
 		display: flex;
 		justify-content: center;
-		align-items: center; 
+		align-items: center;
+		padding-bottom: 15%;
 	}
 	&__button { 
 		padding:15px 17px;

@@ -7,6 +7,7 @@
 		background: url('../images/about-bg-desktop.jpg') no-repeat top center;
 		background-size: cover;
 
+
 	}
 	// background-size: cover;
 	position: relative;
@@ -76,11 +77,13 @@
 	
 	&::before{
 		@media (max-width: $width-sm){
-			content:url('../images/about-header-bg.png');
-		opacity: 0.7;
-		height: 100%;
-		@include pos($t:0, $l:0);
-		z-index: -4;
+			content:'';
+			background: url('../images/about-header-bg.png') no-repeat center center;
+			background-size: cover;
+			@include size(100%);
+			@include pos($r:0, $b:0);
+			opacity: 0.7;
+			z-index: -4;
 		}
 		
 	}

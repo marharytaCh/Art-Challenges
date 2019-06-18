@@ -73,7 +73,7 @@ body {
 .design-container{
 
 	@media (max-width: $width-sm){
-		max-width: 340px;
+		max-width: 90%;
 	}
 	@media (min-width: $width-sm){
 		max-width: 1250px;
