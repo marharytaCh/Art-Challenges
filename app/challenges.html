@@ -10,7 +10,7 @@
 	<link rel="icon" href="images/favicon.png">
 
 	<!--build:css css/styles.min.css-->
-	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+<!--	<link rel="stylesheet" href="css/libs/bootstrap.min.css">-->
 	<link rel="stylesheet" type="text/css" href="js/libs/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="js/libs/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/global.min.css">
@@ -22,7 +22,7 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="challenge-body">
 	<svg width="0" height="0" class="hidden">
 		<symbol viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="facebook">
 			<path d="M2.344 16h5.219v-5.688H5.688V8.438h1.875V6.094A2.346 2.346 0 0 1 9.905 3.75h2.344v1.875h-1.875a.939.939 0 0 0-.938.938v1.875h2.728l-.312 1.874H9.438V16h4.218A2.346 2.346 0 0 0 16 13.656V2.344A2.346 2.346 0 0 0 13.656 0H2.344A2.346 2.346 0 0 0 0 2.344v11.312A2.346 2.346 0 0 0 2.344 16zM.938 2.344c0-.776.63-1.406 1.406-1.406h11.312c.776 0 1.406.63 1.406 1.406v11.312c0 .776-.63 1.406-1.406 1.406h-3.281V11.25h2.272l.625-3.75h-2.897v-.938h2.813v-3.75H9.905a3.285 3.285 0 0 0-3.281 3.282V7.5H4.75v3.75h1.875v3.813H2.344a1.408 1.408 0 0 1-1.406-1.407V2.344z"
@@ -82,6 +82,84 @@
 						</div>
 					</div>
 				</div>
+	<!-- Enter -->
+	<div id="enterModalBg" class="bg enterModalBg">
+		<div class="content enterModalContent">
+			<div class="content__wrapper">
+				<svg class="icon content__close startModalContent__close">
+					<use xlink:href="#closeCross"></use>
+				</svg>
+			</div>
+			<svg class="icon enterModalContent__logo">
+				<use xlink:href="#Partoflogo"></use>
+			</svg>
+			<div class="enterModalContent__container">
+				<p class="enterModalContent__title">Вход в аккаунт</p>
+				<form class="inputs enterModalContent__inputs">
+					<div class="inputs__wrapping enterModalContent__wrapping">
+						<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
+					</div>
+					<div class="inputs__wrapping enterModalContent__wrapping inputs__wrapping--password">
+						<input type="password" class="inputs__input enterModalContent__password" placeholder="Введите пароль">
+						<span class="inputs__eye registerModalContent__eye"></span>
+					</div>
+				</form>
+				<p class="enterModalContent__forgot">Забыл пароль</p>
+				<button class="button enterModalContent__button">Вход</button>
+				<label class="enterModalContent__remember">
+					<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
+					<span class="enterModalContent__custom-checkbox"></span>
+					<span class="enterModalContent__checktext">Запомнить пароль</span>
+				</label>
+
+				<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
+					<p class="enterModalContent__register">Зарегистрируйтесь</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Register -->
+	<div id="registerModalBg" class="bg registerModalBg">
+		<div class="content registerModalContent">
+			<div class="content__wrapper">
+				<svg class="icon content__close registerModalContent__close">
+					<use xlink:href="#closeCross"></use>
+				</svg>
+			</div>
+			<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
+			<div class="registerModalContent__container">
+				<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
+				<form class="inputs registerModalContent__inputs">
+					<div class="inputs__wrapping registerModalContent__wrapping">
+						<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
+					</div>
+					<div class="inputs__wrapping registerModalContent__wrapping">
+						<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
+					</div>
+					<div class="inputs__wrapping registerModalContent__wrapping inputs__wrapping--password">
+						<input type="password" class="inputs__input registerModalContent__password" placeholder="Введите пароль">
+						<span class="inputs__eye registerModalContent__eye"></span>
+					</div>
+
+				</form>
+				<button class="button registerModalContent__button">Зарегистрироваться</button>
+				<div class="registerModalContent__wrap">
+					<p class="registerModalContent__textfacebook">Войти з помощью:</p>
+					<svg class="icon registerModalContent__facebook">
+						<use xlink:href="#facebook"></use>
+					</svg>
+				</div>
+
+				<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
+					<p class="registerModalContent__enter">Войти</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+    <!--    Menu modal-->
 	<div id="menuBg" class="bg menu-bg ">
 		<div class="content menuContent center-anim">
 			<div class="content__wrapper">
@@ -100,7 +178,7 @@
 
 					</div>
 					<div class="content__item">
-						<a href="#" class="content__link content__link--orange">
+						<a href="challenges.html" class="content__link content__link--orange">
 							<img src="images/SVG/menu-challenge.svg" alt="Челендж">
 							<p class="orange">Челендж</p>
 						</a>
@@ -161,65 +239,200 @@
 	<header class="challenges-header">
 		<div class="design-container">
 			<nav class="navigation">
-				<img src="images/SVG/logo.svg" alt="Логотип" class="navigation__logo">
+                <a href="index.html" class="navigation__logo-link"><img src="images/SVG/logo.svg" alt="Логотип" class="navigation__logo"></a>
+
 				<div class="menu menuBtn">
 				</div>
+
+				<ul class="menu-desktop">
+					<li class="menu-desktop__item ">
+						<a href="challenges.html" class="menu-desktop__link ">Челендж</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#" class="menu-desktop__link ">Блог</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#" class="menu-desktop__link">Новости</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#" class="menu-desktop__link">Обучение</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#" class="menu-desktop__link">Магазин</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="about.html" class="menu-desktop__link">О нас</a>
+					</li>
+					<li class="menu-desktop__item">
+						<a href="#" class="menu-desktop__link"><img src="images/SVG/menu-mail.svg" alt="Контакт"></a>
+					</li>
+				</ul>
+
 			</nav>
 			<h1 class="challenges-header__title">Challenges</h1>
 		</div>
 	</header>
 
 	<section class="challenges-main">
-		<div class="challenges-slider">
-					<div class="sliders">
-						<div class="sliderok">
-							<img src="images/chal-s1.1.jpg" alt="">
+		<div class="challenges-main__container">
+			<div class="challenges-slider">
+				<div class="slide">
+					<div class="slide-item">
+						<h2 class="slide-item__title">Hall of Fame</h2>
+						<div class="slide-item__wrap">
+							<img src="images/chal-s1.1.jpg" alt="Участник челленджа">
 							<p>Джамир Шабах</p>
-							<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-							<img src="images/chal-s1.1.jpg" alt="">
-							<p>Джамир Шабах</p>
-							<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-							<img src="images/chal-s1.1.jpg" alt="">
-							<p>Джамир Шабах</p>
-							<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-							<img src="images/chal-s1.1.jpg" alt="">
-							<p>Джамир Шабах</p>
-							<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-							<img src="images/chal-s1.1.jpg" alt="">
 						</div>
+						<p class="slide-item__info">Победитель челенджа дизайн интерьера от 31.03.2019</p>
+						<p class="slide-item__task"><span>Задание:</span> дизайн\ гостинной площадью 50 кв. м. частного дома в стиле модерн.</p>
+						<p class="slide-item__info">Челендж закончился 05.04.2018</p>
 
+						<div class="slide-item__wrap slide-item__wrap--top">
+							<img src="images/chal-s1.2.jpg" alt="Участник челленджа">
+							<p>Иван Шевченко</p>
+						</div>
+						<p class="slide-item__info">Победитель челенджа  Ui/UX дизайна  от 05.01.2019</p>
+						<p class="slide-item__task"><span>Задание:</span> дизайн адаптивного лендинг пейджа игровой компании.</p>
+						<p class="slide-item__info">Челендж закончился 05.03.2018</p>
 					</div>
-			<div class="sliders">
 
-				<img src="images/chal-s1.1.jpg" alt="">
-				<p>Джамир Шабах</p>
-				<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-				<img src="images/chal-s1.1.jpg" alt="">
-				<p>Джамир Шабах</p>
-				<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-				<img src="images/chal-s1.1.jpg" alt="">
-				<p>Джамир Шабах</p>
-				<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-			</div>
-			<div class="sliders">
+				</div>
+				<div class="slide">
+					<div class="slide-item">
+						<h2 class="slide-item__title">Действующие</h2>
+						<div class="slide-item__wrap">
+							<img src="images/chal-s2.1.jpg" alt="Дизайн">
+							<p>Дизайн интреьера</p>
+						</div>
+						<p class="slide-item__task"><span>Задание:</span> разработка интерьера ресторана японской кухни площадью 400 кв. м.</p>
+						<div class="timer line">
+							<p>До конца<br> челленджа:</p>
+							<div id="clockdivOne" class="clockdiv">
+								<div>
+									<span class="days"></span>
+									<div class="smalltext">дней</div>
+								</div>
+								<div>
+									<span class="hours"></span>
+									<div class="smalltext">часов</div>
+								</div>
+								<div>
+									<span class="minutes"></span>
+									<div class="smalltext">мин.</div>
+								</div>
+								<div>
+									<span class="seconds"></span>
+									<div class="smalltext">сек.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide-item__wrap slide-item__wrap--top">
+							<img src="images/chal-s2.2.jpg" alt="Дизайн">
+							<p>UI/UX дизайн</p>
+						</div>
+						<p class="slide-item__task"><span>Задание:</span> разработка интерьера ресторана японской кухни площадью 400 кв. м.</p>
+						<div class="timer line">
+							<p>До конца<br> челленджа:</p>
+							<div id="clockdivSecond" class="clockdiv">
+								<div>
+									<span class="days"></span>
+									<div class="smalltext">дней</div>
+								</div>
+								<div>
+									<span class="hours"></span>
+									<div class="smalltext">часов</div>
+								</div>
+								<div>
+									<span class="minutes"></span>
+									<div class="smalltext">мин.</div>
+								</div>
+								<div>
+									<span class="seconds"></span>
+									<div class="smalltext">сек.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide-item__wrap slide-item__wrap--top">
+							<img src="images/chal-s2.3.jpg" alt="Дизайн">
+							<p>Цифровая иллюстрация</p>
+						</div>
+						<p class="slide-item__task"><span>Задание:</span> разработка интерьера ресторана японской кухни площадью 400 кв. м.</p>
+						<div class="timer line">
+							<p>До конца<br> челленджа:</p>
+							<div id="clockdivThird" class="clockdiv">
+								<div>
+									<span class="days"></span>
+									<div class="smalltext">дней</div>
+								</div>
+								<div>
+									<span class="hours"></span>
+									<div class="smalltext">часов</div>
+								</div>
+								<div>
+									<span class="minutes"></span>
+									<div class="smalltext">мин.</div>
+								</div>
+								<div>
+									<span class="seconds"></span>
+									<div class="smalltext">сек.</div>
+								</div>
+							</div>
+						</div>
+						<div class="slide-item__wrap slide-item__wrap--top">
+							<img src="images/chal-s2.4.jpg" alt="Дизайн">
+							<p>3D моделирование</p>
+						</div>
+						<p class="slide-item__task"><span>Задание:</span> разработка интерьера ресторана японской кухни площадью 400 кв. м.</p>
+						<div class="timer">
+							<p>До конца<br> челленджа:</p>
+							<div id="clockdivFouth" class="clockdiv">
+								<div>
+									<span class="days"></span>
+									<div class="smalltext">дней</div>
+								</div>
+								<div>
+									<span class="hours"></span>
+									<div class="smalltext">часов</div>
+								</div>
+								<div>
+									<span class="minutes"></span>
+									<div class="smalltext">мин.</div>
+								</div>
+								<div>
+									<span class="seconds"></span>
+									<div class="smalltext">сек.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide-item">
+						<h2 class="slide-item__title">Завершенные</h2>
+						<div class="slide-item__wrap">
+							<img src="images/chal-s3.1.jpg" alt="Дизайн">
+							<p>Дизайн интерьера</p>
+						</div>
+						<p class="slide-item__task"><span>Задание:</span> дизайн\ гостинной площадью 50 кв. м. частного дома в стиле модерн.</p>
+						<p class="slide-item__info slide-item__info--bottom line">Челендж закончился 05.03.2018</p>
 
-				<img src="images/chal-s1.1.jpg" alt="">
-				<p>Джамир Шабах</p>
-				<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-				<img src="images/chal-s1.1.jpg" alt="">
-				<p>Джамир Шабах</p>
-				<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
-				<img src="images/chal-s1.1.jpg" alt="">
-				<p>Джамир Шабах</p>
-				<p>Победитель челенджа дизайн интерьера от 31.03.2019</p>
+						<div class="slide-item__wrap slide-item__wrap--top">
+							<img src="images/chal-s3.2.jpg" alt="Дизайн">
+							<p>Дизайн интерьера</p>
+						</div>
+						<p class="slide-item__task"><span>Задание:</span> дизайн адаптивного лендинг пейджа игровой компании.</p>
+						<p class="slide-item__info">Челендж закончился 05.03.2018</p>
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</section>
 	<!-- Scripts -->
 
 	<!--build:js js/main.min.js -->
 	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/libs/bootstrap.bundle.min.js"></script>
+<!--	<script src="js/libs/bootstrap.bundle.min.js"></script>-->
 	<script src="js/libs/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
 	<!--endbuild-->
