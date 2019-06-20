@@ -25,7 +25,7 @@
 		z-index: -20;
 		@media (min-width: $width-sm){
 			//content:url('../images/about-line-desktop.png');
-			background: url('../images/about-line-desktop.png') no-repeat center center;
+			background: url('../images/SVG/line-start-bg.svg') no-repeat center center;
 			background-size: cover;
 			@include size(100%);
 			@include pos($r:0, $b:0);
@@ -54,15 +54,15 @@
 		@media (min-width: $width-sm){
 			display: none;
 		}
-
 	}
+
 	&__logo { 
 		//padding-top: 55%;
 		@media (max-width: $width-sm){
 			width: 100%;
 		}
 		@media (min-width: $width-sm){
-			padding-right: 5px;
+			padding-right: 2%;
 		}
 
 
@@ -71,8 +71,10 @@
 		@media (max-width: $width-sm){
 			padding-top: 23%;
 		}
+		@media (min-width: $width-sm){
+			padding-bottom: 10%;
+		}
 
-		//padding-bottom: 34%;
 		color: white; 
 		font: 300 0.875rem/1.5 $font; 
 	}
@@ -125,6 +127,9 @@
 			padding-bottom: 10%;
 			display: flex;
 			justify-content: center;
+		}
+		a{
+			padding-right: 5%;
 		}
 	}
 
