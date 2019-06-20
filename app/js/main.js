@@ -78,7 +78,7 @@
 				}
 			]
 		});
-		setTimeout(function() { alert('Привет') }, 1000);
+		//setTimeout("document.getElementsByClassName('hey')[0].style.display='block'", 3000);
 	});
 	$(".go-to-challenge").click(function(){
 		GoToChallengePage("challenges.html")

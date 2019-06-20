@@ -16,7 +16,7 @@
 			content:'';
 		@media (min-width: $width-sm){
 			//content:url('../images/about-line-desktop.png');
-			background: url('../images/about-line-desktop.png') no-repeat center center;
+			background: url('../images/SVG/line-start-bg.svg') no-repeat center center;
 			background-size: cover;
 			@include size(100%);
 			@include pos($r:0, $b:0);
@@ -25,7 +25,7 @@
 		}
 		@media (max-width: $width-sm){
 			//content:url('../images/lines.png');
-			background: url('../images/lines.png') no-repeat center center;
+			background: url('../../images/SVG/line-mobile-about-bg.svg') no-repeat center center;
 			background-size: cover;
 			@include size(100%);
 			@include pos($t:0, $r:0);
@@ -213,14 +213,15 @@
     max-width:100%;
   }
 	&__item{
+		width: 85%;
 		img{
 			@media (max-width: $width-sm){
-				width: 85%;
+				width: 100%;
               //max-width:85%;
               //width: 100%;
 				//padding-bottom: 5px;
 			}
-			width: 85%;
+
 			padding-bottom: 5px;
 			
 		}
@@ -242,7 +243,7 @@
       -webkit-filter: brightness(50%);
       //padding-top:20px;
 	}
-	
+	padding-bottom: 10px;
 }
 
 .slick-center  {
