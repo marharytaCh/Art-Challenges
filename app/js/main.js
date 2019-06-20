@@ -78,6 +78,7 @@
 				}
 			]
 		});
+		setTimeout(function() { alert('Привет') }, 1000);
 	});
 	$(".go-to-challenge").click(function(){
 		GoToChallengePage("challenges.html")

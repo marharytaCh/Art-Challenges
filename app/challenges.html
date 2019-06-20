@@ -82,6 +82,84 @@
 						</div>
 					</div>
 				</div>
+	<!-- Enter -->
+	<div id="enterModalBg" class="bg enterModalBg">
+		<div class="content enterModalContent">
+			<div class="content__wrapper">
+				<svg class="icon content__close startModalContent__close">
+					<use xlink:href="#closeCross"></use>
+				</svg>
+			</div>
+			<svg class="icon enterModalContent__logo">
+				<use xlink:href="#Partoflogo"></use>
+			</svg>
+			<div class="enterModalContent__container">
+				<p class="enterModalContent__title">Вход в аккаунт</p>
+				<form class="inputs enterModalContent__inputs">
+					<div class="inputs__wrapping enterModalContent__wrapping">
+						<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
+					</div>
+					<div class="inputs__wrapping enterModalContent__wrapping inputs__wrapping--password">
+						<input type="password" class="inputs__input enterModalContent__password" placeholder="Введите пароль">
+						<span class="inputs__eye registerModalContent__eye"></span>
+					</div>
+				</form>
+				<p class="enterModalContent__forgot">Забыл пароль</p>
+				<button class="button enterModalContent__button">Вход</button>
+				<label class="enterModalContent__remember">
+					<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
+					<span class="enterModalContent__custom-checkbox"></span>
+					<span class="enterModalContent__checktext">Запомнить пароль</span>
+				</label>
+
+				<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
+					<p class="enterModalContent__register">Зарегистрируйтесь</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Register -->
+	<div id="registerModalBg" class="bg registerModalBg">
+		<div class="content registerModalContent">
+			<div class="content__wrapper">
+				<svg class="icon content__close registerModalContent__close">
+					<use xlink:href="#closeCross"></use>
+				</svg>
+			</div>
+			<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
+			<div class="registerModalContent__container">
+				<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
+				<form class="inputs registerModalContent__inputs">
+					<div class="inputs__wrapping registerModalContent__wrapping">
+						<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
+					</div>
+					<div class="inputs__wrapping registerModalContent__wrapping">
+						<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
+					</div>
+					<div class="inputs__wrapping registerModalContent__wrapping inputs__wrapping--password">
+						<input type="password" class="inputs__input registerModalContent__password" placeholder="Введите пароль">
+						<span class="inputs__eye registerModalContent__eye"></span>
+					</div>
+
+				</form>
+				<button class="button registerModalContent__button">Зарегистрироваться</button>
+				<div class="registerModalContent__wrap">
+					<p class="registerModalContent__textfacebook">Войти з помощью:</p>
+					<svg class="icon registerModalContent__facebook">
+						<use xlink:href="#facebook"></use>
+					</svg>
+				</div>
+
+				<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
+					<p class="registerModalContent__enter">Войти</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+    <!--    Menu modal-->
 	<div id="menuBg" class="bg menu-bg ">
 		<div class="content menuContent center-anim">
 			<div class="content__wrapper">
@@ -100,7 +178,7 @@
 
 					</div>
 					<div class="content__item">
-						<a href="#" class="content__link content__link--orange">
+						<a href="challenges.html" class="content__link content__link--orange">
 							<img src="images/SVG/menu-challenge.svg" alt="Челендж">
 							<p class="orange">Челендж</p>
 						</a>
@@ -161,7 +239,8 @@
 	<header class="challenges-header">
 		<div class="design-container">
 			<nav class="navigation">
-				<img src="images/SVG/logo.svg" alt="Логотип" class="navigation__logo">
+                <a href="index.html" class="navigation__logo-link"><img src="images/SVG/logo.svg" alt="Логотип" class="navigation__logo"></a>
+
 				<div class="menu menuBtn">
 				</div>
 
