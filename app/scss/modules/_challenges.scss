@@ -22,7 +22,7 @@
       //opacity: 0.5;
     }
     @media (min-width: $width-sm) {
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/line-chal-desktop.png') no-repeat top center;
+      background: url('../images/SVG/line-start-bg.svg') no-repeat top center;
       background-size: cover;
       @include size(100%);
       @include pos($r: 0, $b: 0);

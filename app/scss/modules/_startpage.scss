@@ -237,8 +237,12 @@
 		width: 125px;
 		height: 45px;
 		margin-bottom: 55px;
+		cursor: pointer;
 		&-link{
 			color:#fff;
+			&:hover{
+				color:#fff;
+			}
 		}
 	}
 

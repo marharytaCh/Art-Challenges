@@ -63,6 +63,9 @@ body {
 	}
 	a{
 		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 .hidden{
 	display: none;
@@ -118,6 +121,7 @@ body {
 		flex-direction: column;
 		// justify-content: center;
 		align-items: center;
+		margin-top: 8%;
 	}
 
 }
@@ -499,7 +503,8 @@ body {
 
 // Homepage sections styles
 .homepage-section { 
-	height: 65px;
+	height: 60px;
+	//margin: 2%;
 	width: 76%;
 	background: #323e57;
 	border-radius: 16px;
