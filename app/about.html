@@ -97,176 +97,189 @@
 						<a href="#" class="menu-desktop__link"><img src="images/SVG/menu-mail.svg" alt="Контакт"></a>
 					</li>
 				</ul>
-				
+				<!--			MODAL WINDOWS-->
+
+				<!-- START MODAL -->
+				<div id="startModalBg" class="bg startModalBg">
+					<div class="content startModalContent center-anim">
+						<div class="content__wrapper">
+							<svg class="icon content__close startModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<div class="startModalContent__container">
+							<svg class="icon startModalContent__logo">
+								<use xlink:href="#logo"></use>
+							</svg>
+
+							<div class="startModalContent__buttons">
+								<button class="button startModalContent__enter">Вход</button>
+								<button class="button startModalContent__register">Регистрация</button>
+							</div>
+							<p class="startModalContent__text">Быстрый вход, используя <br> Touch ID</p>
+							<img src="images/SVG/Finger.svg" alt="" class="startModalContent__fingerprint">
+							<p class="startModalContent__text2">Использовать Touch ID</p>
+						</div>
+					</div>
+				</div>
+				<!-- Enter -->
+				<div id="enterModalBg" class="bg enterModalBg">
+					<div class="content enterModalContent">
+						<div class="content__wrapper">
+							<svg class="icon content__close startModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<svg class="icon enterModalContent__logo">
+							<use xlink:href="#Partoflogo"></use>
+						</svg>
+						<div class="enterModalContent__container">
+							<p class="enterModalContent__title">Вход в аккаунт</p>
+							<form class="inputs enterModalContent__inputs">
+								<div class="inputs__wrapping enterModalContent__wrapping">
+									<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
+								</div>
+								<div class="inputs__wrapping enterModalContent__wrapping inputs__wrapping--password">
+									<input type="password" class="inputs__input enterModalContent__password" placeholder="Введите пароль">
+									<span class="inputs__eye registerModalContent__eye"></span>
+								</div>
+							</form>
+							<p class="enterModalContent__forgot">Забыл пароль</p>
+							<button class="button enterModalContent__button"><a class="enterModalContent__button-link" href="homepage.html">Вход</a></button>
+							<label class="enterModalContent__remember">
+								<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
+								<span class="enterModalContent__custom-checkbox"></span>
+								<span class="enterModalContent__checktext">Запомнить пароль</span>
+							</label>
+
+							<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
+								<p class="enterModalContent__register">Зарегистрируйтесь</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Register -->
+				<div id="registerModalBg" class="bg registerModalBg">
+					<div class="content registerModalContent">
+						<div class="content__wrapper">
+							<svg class="icon content__close registerModalContent__close">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
+						<div class="registerModalContent__container">
+							<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
+							<form class="inputs registerModalContent__inputs">
+								<div class="inputs__wrapping registerModalContent__wrapping">
+									<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
+								</div>
+								<div class="inputs__wrapping registerModalContent__wrapping">
+									<input type="email" class="inputs__input registerModalContent__email" placeholder="Почта">
+								</div>
+								<div class="inputs__wrapping registerModalContent__wrapping inputs__wrapping--password">
+									<input type="password" class="inputs__input registerModalContent__password" placeholder="Введите пароль">
+									<span class="inputs__eye registerModalContent__eye"></span>
+								</div>
+
+							</form>
+							<button class="button registerModalContent__button">Зарегистрироваться</button>
+							<div class="registerModalContent__wrap">
+								<p class="registerModalContent__textfacebook">Войти з помощью:</p>
+								<svg class="icon registerModalContent__facebook">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</div>
+
+							<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
+								<p class="registerModalContent__enter">Войти</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Menu-->
+				<div id="menuBg" class="bg menu-bg ">
+					<div class="content menuContent center-anim">
+						<div class="content__wrapper">
+							<svg class="icon content__close ">
+								<use xlink:href="#closeCross"></use>
+							</svg>
+						</div>
+						<div class="content__info">
+							<h1 class="content__title">Меню</h1>
+							<div class="content__items">
+								<div class="content__item"> <!--accountBtn-->
+									<a href="#" class="content__link accountBtn">
+										<img src="images/SVG/account.svg" alt="Кабинет">
+										<p>Кабинет</p>
+									</a>
+
+								</div>
+								<div class="content__item">
+									<a href="challenges.html" class="content__link content__link--orange">
+										<img src="images/SVG/menu-challenge.svg" alt="Челендж">
+										<p class="orange">Челендж</p>
+									</a>
+
+								</div>
+								<div class="content__item">
+									<a href="#" class="content__link ">
+										<img src="images/SVG/menu-blog.svg" alt="Блог">
+										<p>Блог</p>
+									</a>
+
+								</div>
+								<div class="content__item">
+									<a href="#" class="content__link ">
+										<img src="images/SVG/menu-news.svg" alt="Новости">
+										<p>Новости</p>
+									</a>
+								</div>
+								<div class="content__item">
+									<a href="#" class="content__link ">
+										<img src="images/SVG/menu-education.svg" alt="Обучение">
+										<p>Обучение</p>
+									</a>
+
+								</div>
+								<div class="content__item">
+									<a href="#" class="content__link ">
+										<img src="images/SVG/menu-shop.svg" alt="account">
+										<p>Магазин</p>
+									</a>
+								</div>
+								<div class="content__item about-item">
+									<a href="about.html" class="content__link ">
+										<img src="images/SVG/menu-about.svg" alt="О нас" >
+										<p>О нас</p>
+									</a>
+
+								</div>
+								<div class="content__item">
+									<a href="#" class="content__link ">
+										<img src="images/SVG/menu-mail.svg" alt="Контакт">
+										<p>Контакт</p>
+									</a>
+
+								</div>
+								<div class="content__item">
+									<a href="#" class="content__link ">
+										<img src="images/SVG/facebook.svg" alt="Соцсети">
+										<p>Соцсети</p>
+									</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--			MODAL WINDOWS END-->
 			</nav>
 			<a href="" class="logo">
 				<img src="images/SVG/logo.svg" alt="Логотип" class="logo__icon">
 			</a>
-		</div>
-
-		<!-- Modal Windows -->
-		<!-- START -->
-		<div id="startModalBg" class="bg startModalBg">
-			<div class="content startModalContent center-anim">
-				<div class="content__wrapper">
-					<svg class="icon content__close startModalContent__close">
-						<use xlink:href="#closeCross"></use>
-					</svg>
-				</div>
-				<div class="startModalContent__container ">
-					<svg class="icon startModalContent__logo">
-						<use xlink:href="#Logo"></use>
-					</svg>
-
-					<div class="startModalContent__buttons">
-						<button class="button startModalContent__enter">Вход</button>
-						<button class="button startModalContent__register">Регистрация</button>
-					</div>
-					<p class="startModalContent__text">Быстрый вход, используя <br> Touch ID</p>
-					<img src="images/SVG/Finger.svg" alt="" class="startModalContent__fingerprint">
-					<p class="startModalContent__text2">Использовать Touch ID</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- ENTER -->
-		<div id="enterModalBg" class="bg enterModalBg">
-			<div class="content enterModalContent">
-				<div class="content__wrapper">
-					<svg class="icon content__close startModalContent__close">
-						<use xlink:href="#closeCross"></use>
-					</svg>
-				</div>
-				<svg class="icon enterModalContent__logo">
-					<use xlink:href="#Partoflogo"></use>
-				</svg>
-				<div class="enterModalContent__container">
-					<p class="enterModalContent__title">Вход в аккаунт</p>
-					<form class="inputs enterModalContent__inputs">
-						<input type="text" class="inputs__input enterModalContent__name" placeholder="Введите имя">
-						<input type="password" class="inputs__input inputs__input--password enterModalContent__password" placeholder="Введите пароль">
-					</form>
-					<p class="enterModalContent__forgot">Забыл пароль</p>
-					<button class="button enterModalContent__button">Вход</button>
-					<label class="enterModalContent__remember">
-						<input type="checkbox" id="remember" name="remember" class="enterModalContent__checkbox">
-						<span class="enterModalContent__custom-checkbox"></span>
-						<span class="enterModalContent__checktext">Запомнить пароль</span>
-					</label>
-
-					<div class="enterModalContent__wrapper"><p class="enterModalContent__noaccount">Нет аккаунта?</p>
-						<p class="enterModalContent__register">Зарегистрируйтесь</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<!-- Register -->
-		<div id="registerModalBg" class="bg registerModalBg">
-			<div class="content registerModalContent">
-				<div class="content__wrapper">
-					<svg class="icon content__close registerModalContent__close">
-						<use xlink:href="#closeCross"></use>
-					</svg>
-				</div>
-				<img src="images/SVG/Part of logo.svg" alt="" class="registerModalContent__logo">
-				<div class="registerModalContent__container">
-					<p class="registerModalContent__title">Регистрация <br> аккаунта</p>
-					<form class="inputs registerModalContent__inputs">
-						<input type="text" class="inputs__input registerContent__name" placeholder="Введите имя">
-						<input type="text" class="inputs__input registerModalContent__email" placeholder="Почта">
-						<input type="password" class="inputs__input inputs__input--password registerModalContent__password" placeholder="Введите пароль">
-					</form>
-					<button class="button registerModalContent__button">Зарегистрироваться</button>
-					<div class="registerModalContent__wrap">
-						<p class="registerModalContent__textfacebook">Войти з помощью:</p>
-						<img src="images/SVG/facebook.svg" alt="" class="registerModalContent__facebook">
-					</div>
-					
-					<div class="registerModalContent__wrapper"><p class="registerModalContent__yesaccount">Есть аккаунт?</p>
-						<p class="registerModalContent__enter">Войти</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!-- MENU -->
-		<!--    Menu modal-->
-		<div id="menuBg" class="bg menu-bg ">
-			<div class="content menuContent center-anim">
-				<div class="content__wrapper">
-					<svg class="icon content__close ">
-						<use xlink:href="#closeCross"></use>
-					</svg>
-				</div>
-				<div class="content__info">
-					<h1 class="content__title">Меню</h1>
-					<div class="content__items">
-						<div class="content__item"> <!--accountBtn-->
-							<a href="#" class="content__link accountBtn">
-								<img src="images/SVG/account.svg" alt="Кабинет">
-								<p>Кабинет</p>
-							</a>
-
-						</div>
-						<div class="content__item">
-							<a href="challenges.html" class="content__link content__link--orange">
-								<img src="images/SVG/menu-challenge.svg" alt="Челендж">
-								<p class="orange">Челендж</p>
-							</a>
-
-						</div>
-						<div class="content__item">
-							<a href="#" class="content__link ">
-								<img src="images/SVG/menu-blog.svg" alt="Блог">
-								<p>Блог</p>
-							</a>
-
-						</div>
-						<div class="content__item">
-							<a href="#" class="content__link ">
-								<img src="images/SVG/menu-news.svg" alt="Новости">
-								<p>Новости</p>
-							</a>
-						</div>
-						<div class="content__item">
-							<a href="#" class="content__link ">
-								<img src="images/SVG/menu-education.svg" alt="Обучение">
-								<p>Обучение</p>
-							</a>
-
-						</div>
-						<div class="content__item">
-							<a href="#" class="content__link ">
-								<img src="images/SVG/menu-shop.svg" alt="account">
-								<p>Магазин</p>
-							</a>
-						</div>
-						<div class="content__item about-item">
-							<a href="about.html" class="content__link ">
-								<img src="images/SVG/menu-about.svg" alt="О нас" >
-								<p>О нас</p>
-							</a>
-
-						</div>
-						<div class="content__item">
-							<a href="#" class="content__link ">
-								<img src="images/SVG/menu-mail.svg" alt="Контакт">
-								<p>Контакт</p>
-							</a>
-
-						</div>
-						<div class="content__item">
-							<a href="#" class="content__link ">
-								<img src="images/SVG/facebook.svg" alt="Соцсети">
-								<p>Соцсети</p>
-							</a>
-
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 		
 	</header>
@@ -340,14 +353,14 @@
 					<div>
 						<div class="slider__item">
 							<img src="images/header-sl8.png" alt="Наш работник">
-							<p class="slider__name">Аркадий Укупник,</p>
-							<p class="slider__position">СЕО</p>
+							<p class="slider__name">Мария Кириченко,</p>
+							<p class="slider__position">PR менеджер</p>
 						</div>
 					</div>
 					<div>
 						<div class="slider__item">
 							<img src="images/header-sl9.png" alt="Наш работник">
-							<p class="slider__name">Аркадий Укупник,</p>
+							<p class="slider__name">Виктория Наум,</p>
 							<p class="slider__position">СЕО</p>
 						</div>
 					</div>
@@ -445,14 +458,14 @@
 						<div>
 							<div class="slider__item">
 								<img src="images/header-sl8.png" alt="Наш работник">
-								<p class="slider__name">Аркадий Укупник,</p>
-								<p class="slider__position">СЕО</p>
+								<p class="slider__name">Мария Кириченко,</p>
+								<p class="slider__position">PR менеджер</p>
 							</div>
 						</div>
 						<div>
 							<div class="slider__item">
 								<img src="images/header-sl9.png" alt="Наш работник">
-								<p class="slider__name">Аркадий Укупник,</p>
+								<p class="slider__name">Виктория Наум,</p>
 								<p class="slider__position">СЕО</p>
 							</div>
 						</div>

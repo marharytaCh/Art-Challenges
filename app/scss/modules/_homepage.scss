@@ -1,10 +1,10 @@
 .homepage-header { 
 	padding: 0 15px;
 	margin: 0 auto;
-	min-width: 374px;
+	min-width: 320px;
 	background: url('../images/homepage-bg.jpg') no-repeat;
 	background-size: cover;
-	height: 50vh;
+	//height: 50vh;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 	position: relative;
@@ -12,18 +12,31 @@
 
 	&::before { 
 		content: '';
-		background-image: url('../images/homepage-lines.png');
-		background-size: cover;
+		@media (max-width: $width-sm){
+			background-image: url('../images/homepage-lines.png');
+			background-size: cover;
+			@include size(100%);
+			//@include pos($r:0, $b:0);
+			opacity: 0.2;
+		}
+
+		@media (min-width: $width-sm){
+			background: url('../images/SVG/line-start-bg.svg') no-repeat top center;
+			@include size(100%);
+			//@include pos($r:0, $b:0);
+			background-size: cover;
+		}
 		position: absolute;
-		height: 100%;
-		width: 100vw;
 		top: -9px;
 		right: 0;
-		opacity: 0.2;
+		//opacity: 0.2;
 		z-index: -1;
 
 	}
-	&__wrap { 
+	&__wrap {
+		@media (min-width: $width-sm){
+			display: none;
+		}
 		display: flex;
 		width: 26%;
 		justify-content: space-between;
@@ -46,14 +59,17 @@
 		width: 37%;
 		border: 1px solid white;
 		border-radius: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 5%;
 	}
 
 	&__name { 
 		font-weight: 600;
-		padding-bottom: 18px;
+		padding-bottom: 6%;
 	}
-	&__wrapping { 
+	&__wrapping {
+		@media (max-width: $width-sm){
+			padding-bottom: 5%;
+		}
 		display: flex;
 		justify-content: space-around;
 	}
@@ -64,7 +80,7 @@
 		justify-content: space-between; 
 	}
 	&__item  { 
-		padding-bottom: 10px; 
+		padding-bottom: 5%;
 		// width: 40px;
 
 		&--video { 
@@ -77,8 +93,8 @@
 .homepage-main { 
 	padding: 0 15px 20px;
 	margin: 0 auto;
-	min-width: 374px;
-	height: 50vh;
+	min-width: 320px;
+	//height: 50vh;
 	&__wrapper {
 		height: 50vh;
 		display: flex;
