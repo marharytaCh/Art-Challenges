@@ -102,19 +102,19 @@
 		align-items: center;
 		justify-content: space-around;
 	} 
-	&__section { 
-		position: relative;
-
-		&:nth-of-type(even) .homepage-main__text::before { 
-			content: '';
-			position: absolute;
-			left: -10%;
-			top: 26%;
-			border: 5px solid transparent;	
-			border-left: 5px solid white;
-		}
-
-	}
+	//&__section {
+	//	position: relative;
+	//
+	//	&:nth-of-type(even) .homepage-main__text::before {
+	//		content: '';
+	//		position: absolute;
+	//		left: -10%;
+	//		top: 26%;
+	//		border: 5px solid transparent;
+	//		border-left: 5px solid white;
+	//	}
+	//
+	//}
 
 	&__text { 
 		font-weight: 600;
