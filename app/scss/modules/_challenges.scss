@@ -95,6 +95,7 @@
   }
 
   &-slider {
+    height: calc(100%-320px);
     @media (max-width: $width-sm) {
       margin-top: -30px;
     }
@@ -115,7 +116,6 @@
 
 
       &-item {
-
         border-radius: 10px 10px 0 0;
         //border: 1px  solid #1b1e21;
         background: #fefefe;
